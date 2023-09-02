@@ -36,7 +36,3 @@ DiaryPlanner Pro is a versatile Windows Forms application that seamlessly combin
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please [open an issue](https://github.com/yourusername/your-repo/issues).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
