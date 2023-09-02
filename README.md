@@ -1,6 +1,6 @@
 # DiaryPlanner Pro
 
-DiaryPlanner Pro is a versatile Windows Forms application that seamlessly combines the functionalities of a diary and planner. It allows users to maintain rich-text diary entries using RTF and organize their daily schedules and events. This application is designed for enhanced productivity and user-friendliness.
+DiaryPlanner Pro is a versatile Windows Forms application that seamlessly combines the functionalities of a diary and planner. It allows users to maintain rich-text diary entries using RTF formatting, organize their daily schedules and events, and stores data in a Microsoft SQL Server 2014 database. This application is designed for enhanced productivity and user-friendliness.
 
 ## Features
 
@@ -13,6 +13,8 @@ DiaryPlanner Pro is a versatile Windows Forms application that seamlessly combin
 - **Stylish UI Elements**: Enhance the user experience with the beautiful controls provided by Guna.UI2.WinForms.
 
 - **QR Code Generation**: Generate QR codes for easy sharing and storage of data.
+
+- **Database Storage**: Utilizes Microsoft SQL Server 2014 for secure and efficient data storage.
 
 ## Requirements
 
@@ -32,7 +34,9 @@ DiaryPlanner Pro is a versatile Windows Forms application that seamlessly combin
 
 - Launch the application.
 - Start creating rich-text diary entries and managing your daily schedules and tasks.
+- Data is securely stored and managed in the Microsoft SQL Server 2014 database.
 
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please [open an issue](https://github.com/yourusername/your-repo/issues).
+
