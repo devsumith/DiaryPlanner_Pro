@@ -52,11 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FlashingScreenForm.cs">
+    <Compile Include="LoadingScreenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FlashingScreenForm.Designer.cs">
-      <DependentUpon>FlashingScreenForm.cs</DependentUpon>
+    <Compile Include="LoadingScreenForm.Designer.cs">
+      <DependentUpon>LoadingScreenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FlashingScreenForm.resx">
-      <DependentUpon>FlashingScreenForm.cs</DependentUpon>
+    <EmbeddedResource Include="LoadingScreenForm.resx">
+      <DependentUpon>LoadingScreenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -104,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\profile-gradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
