@@ -16,7 +16,7 @@ namespace DiaryPlanner_Pro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FlashingScreenForm());
+            Application.Run(new LoadingScreenForm());
         }
     }
 }

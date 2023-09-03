@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace DiaryPlanner_Pro
 {
-    public partial class FlashingScreenForm : Form
+    public partial class LoadingScreenForm : Form
     {
-        public FlashingScreenForm()
+        public LoadingScreenForm()
         {
             InitializeComponent();
         }
