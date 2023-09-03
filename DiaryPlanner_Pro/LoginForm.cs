@@ -40,5 +40,24 @@ namespace DiaryPlanner_Pro
         }
 
         #endregion
+
+        #region FUNCTIONS FOR DRAGGING FUNCTIONALITY OF FORM
+
+        private void loginFormPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            // Check if the left mouse button is held down (mouse is being dragged).
+            if (e.Button == MouseButtons.Left)
+            {
+                // Calculate the new position of the form based on the mouse movement.
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        Point lastPoint;
+
+        private void loginFormPanel_MouseDown(object sender, MouseEventArgs e) => lastPoint = new Point(e.X, e.Y);
+
+        #endregion
     }
 }
