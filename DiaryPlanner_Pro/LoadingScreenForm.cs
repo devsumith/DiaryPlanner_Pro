@@ -25,6 +25,8 @@ namespace DiaryPlanner_Pro
             backgroundWorker.RunWorkerAsync();
         }
 
+        #region FUNCTIONS FOR LOADING SCREEN
+
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             // This method runs in a separate background thread.
@@ -61,5 +63,7 @@ namespace DiaryPlanner_Pro
                 loginForm.Show();
             });
         }
+
+        #endregion
     }
 }
