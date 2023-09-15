@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadingScreenForm));
             this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.loadingPercent = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -121,9 +122,10 @@
             this.ClientSize = new System.Drawing.Size(540, 322);
             this.Controls.Add(this.loginFormPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoadingScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FlashingScreenForm";
+            this.Text = "Diary Planner Pro";
             this.Load += new System.EventHandler(this.FlashingScreenForm_Load);
             this.loginFormPanel.ResumeLayout(false);
             this.loginFormPanel.PerformLayout();
