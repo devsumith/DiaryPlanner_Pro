@@ -53,14 +53,14 @@ namespace DiaryPlanner_Pro
                 // Hide the current form (FlashingScreenForm).
                 this.Hide();
 
-                // Create a new instance of the 'LoginForm'.
-                var loginForm = new LoginForm();
+                // Create a new instance of the 'SignInForm'.
+                var signInForm = new SignInForm();
 
-                // Attach an event handler to the 'FormClosed' event of the 'LoginForm'.
-                loginForm.FormClosed += (s, args) => this.Close();
+                // Attach an event handler to the 'FormClosed' event of the 'SignInForm'.
+                signInForm.FormClosed += (s, args) => this.Close();
 
-                // Show the 'LoginForm'.
-                loginForm.Show();
+                // Show the 'SignInForm'.
+                signInForm.Show();
             });
         }
 

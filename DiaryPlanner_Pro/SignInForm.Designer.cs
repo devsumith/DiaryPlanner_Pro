@@ -30,10 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.userPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.loginFormPanel.SuspendLayout();
             this.userPanel.SuspendLayout();
             this.SuspendLayout();
@@ -53,11 +55,17 @@
             this.loginFormPanel.Size = new System.Drawing.Size(855, 551);
             this.loginFormPanel.TabIndex = 2;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // userPanel
             // 
             this.userPanel.BackColor = System.Drawing.Color.Transparent;
             this.userPanel.BorderColor = System.Drawing.Color.Black;
             this.userPanel.BorderRadius = 10;
+            this.userPanel.Controls.Add(this.guna2HtmlLabel1);
+            this.userPanel.Controls.Add(this.panel1);
             this.userPanel.Controls.Add(this.guna2ControlBox2);
             this.userPanel.Controls.Add(this.guna2ControlBox1);
             this.userPanel.FillColor = System.Drawing.Color.White;
@@ -89,9 +97,24 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(38, 25);
             this.guna2ControlBox1.TabIndex = 1;
             // 
-            // guna2Elipse1
+            // panel1
             // 
-            this.guna2Elipse1.TargetControl = this;
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Location = new System.Drawing.Point(0, 37);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(839, 1);
+            this.panel1.TabIndex = 12;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(359, 9);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(121, 22);
+            this.guna2HtmlLabel1.TabIndex = 13;
+            this.guna2HtmlLabel1.Text = "Finish signing up";
             // 
             // SignInForm
             // 
@@ -105,15 +128,18 @@
             this.Text = "Diary Planner Pro";
             this.loginFormPanel.ResumeLayout(false);
             this.userPanel.ResumeLayout(false);
+            this.userPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2CustomGradientPanel loginFormPanel;
-        private Guna.UI2.WinForms.Guna2Panel userPanel;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Panel userPanel;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
