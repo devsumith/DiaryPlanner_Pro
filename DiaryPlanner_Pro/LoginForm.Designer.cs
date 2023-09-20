@@ -107,7 +107,7 @@
             this.guna2HtmlLabel3.Enabled = false;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(162, 212);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(162, 199);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(168, 25);
             this.guna2HtmlLabel3.TabIndex = 4;
@@ -119,7 +119,7 @@
             this.guna2HtmlLabel2.Enabled = false;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(129, 153);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(129, 148);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(234, 60);
             this.guna2HtmlLabel2.TabIndex = 3;
