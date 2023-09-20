@@ -59,10 +59,10 @@
             // 
             this.loginFormPanel.Controls.Add(this.guna2HtmlLabel5);
             this.loginFormPanel.Controls.Add(this.guna2HtmlLabel4);
-            this.loginFormPanel.Controls.Add(this.guna2HtmlLabel3);
             this.loginFormPanel.Controls.Add(this.guna2HtmlLabel2);
             this.loginFormPanel.Controls.Add(this.guna2HtmlLabel1);
             this.loginFormPanel.Controls.Add(this.userPanel);
+            this.loginFormPanel.Controls.Add(this.guna2HtmlLabel3);
             this.loginFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginFormPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
             this.loginFormPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
@@ -107,7 +107,7 @@
             this.guna2HtmlLabel3.Enabled = false;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(162, 199);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(162, 235);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(168, 25);
             this.guna2HtmlLabel3.TabIndex = 4;
@@ -119,7 +119,7 @@
             this.guna2HtmlLabel2.Enabled = false;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(129, 148);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(129, 181);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(234, 60);
             this.guna2HtmlLabel2.TabIndex = 3;
@@ -200,7 +200,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.LightGray;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2Button1.Location = new System.Drawing.Point(178, 395);
+            this.guna2Button1.Location = new System.Drawing.Point(177, 395);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Size = new System.Drawing.Size(144, 21);
