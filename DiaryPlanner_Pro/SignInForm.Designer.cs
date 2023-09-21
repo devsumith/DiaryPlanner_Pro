@@ -196,6 +196,7 @@
             this.guna2ComboBox4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2ComboBox4.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2ComboBox4.IntegralHeight = false;
             this.guna2ComboBox4.ItemHeight = 30;
             this.guna2ComboBox4.Items.AddRange(new object[] {
             "YYYY",
@@ -293,6 +294,7 @@
             this.guna2ComboBox3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2ComboBox3.HoverState.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2ComboBox3.IntegralHeight = false;
             this.guna2ComboBox3.ItemHeight = 30;
             this.guna2ComboBox3.Items.AddRange(new object[] {
             "Month",
@@ -325,7 +327,7 @@
             this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Silver;
             this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.Silver;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
             this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2ComboBox2.HoverState.BorderColor = System.Drawing.Color.DimGray;
             this.guna2ComboBox2.IntegralHeight = false;
@@ -400,9 +402,9 @@
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.DimGray;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(4, 4);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(116, 17);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(117, 17);
             this.guna2HtmlLabel6.TabIndex = 16;
-            this.guna2HtmlLabel6.Text = "EMAIL ADDRESS:";
+            this.guna2HtmlLabel6.Text = "GMAIL ADDRESS:";
             // 
             // guna2TextBox3
             // 
@@ -714,9 +716,9 @@
             this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.DimGray;
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(4, 4);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(116, 17);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(133, 17);
             this.guna2HtmlLabel9.TabIndex = 16;
-            this.guna2HtmlLabel9.Text = "EMAIL ADDRESS:";
+            this.guna2HtmlLabel9.Text = "CONTACT NUMBER:";
             // 
             // guna2TextBox4
             // 
