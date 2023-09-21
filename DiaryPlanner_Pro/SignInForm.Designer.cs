@@ -866,6 +866,7 @@
             this.conPasswordBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.conPasswordBox.TabIndex = 4;
             this.conPasswordBox.UseSystemPasswordChar = true;
+            this.conPasswordBox.IconRightClick += new System.EventHandler(this.conPasswordBox_IconRightClick);
             // 
             // guna2Panel9
             // 
