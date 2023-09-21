@@ -77,7 +77,7 @@
             this.conPasswordBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.passwordBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.strengthLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.userPanel.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
@@ -103,7 +103,7 @@
             this.userPanel.BackColor = System.Drawing.Color.Transparent;
             this.userPanel.BorderColor = System.Drawing.Color.Black;
             this.userPanel.BorderRadius = 10;
-            this.userPanel.Controls.Add(this.guna2HtmlLabel13);
+            this.userPanel.Controls.Add(this.strengthLabel);
             this.userPanel.Controls.Add(this.guna2Panel8);
             this.userPanel.Controls.Add(this.guna2Panel9);
             this.userPanel.Controls.Add(this.guna2Panel10);
@@ -957,6 +957,7 @@
             this.passwordBox.TabIndex = 4;
             this.passwordBox.UseSystemPasswordChar = true;
             this.passwordBox.IconRightClick += new System.EventHandler(this.passwordBox_IconRightClick);
+            this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
             // 
             // guna2CirclePictureBox1
             // 
@@ -973,16 +974,16 @@
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.UseTransparentBackground = true;
             // 
-            // guna2HtmlLabel13
+            // strengthLabel
             // 
-            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(442, 382);
-            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(114, 20);
-            this.guna2HtmlLabel13.TabIndex = 30;
-            this.guna2HtmlLabel13.Text = "Minimum 6 characters";
+            this.strengthLabel.BackColor = System.Drawing.Color.Transparent;
+            this.strengthLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.strengthLabel.ForeColor = System.Drawing.Color.Gray;
+            this.strengthLabel.Location = new System.Drawing.Point(442, 381);
+            this.strengthLabel.Name = "strengthLabel";
+            this.strengthLabel.Size = new System.Drawing.Size(123, 21);
+            this.strengthLabel.TabIndex = 30;
+            this.strengthLabel.Text = "Minimum 6 characters";
             // 
             // SignInForm
             // 
@@ -1073,6 +1074,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
+        private Guna.UI2.WinForms.Guna2HtmlLabel strengthLabel;
     }
 }
