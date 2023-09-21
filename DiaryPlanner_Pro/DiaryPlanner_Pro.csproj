@@ -125,6 +125,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calendar.ico" />
+    <None Include="Resources\warningLogo.png" />
+    <None Include="Resources\successLogo.png" />
+    <None Include="Resources\informationLogo.png" />
+    <None Include="Resources\errorLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
