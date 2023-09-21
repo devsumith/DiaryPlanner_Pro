@@ -70,10 +70,10 @@
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.conPasswordBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.passwordBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -181,7 +181,6 @@
             this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
             this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.CheckedChanged += new System.EventHandler(this.guna2RadioButton1_CheckedChanged);
             // 
             // guna2HtmlLabel8
             // 
@@ -800,6 +799,7 @@
             // 
             // guna2GradientButton2
             // 
+            this.guna2GradientButton2.Animated = true;
             this.guna2GradientButton2.BorderColor = System.Drawing.Color.White;
             this.guna2GradientButton2.BorderRadius = 6;
             this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -821,7 +821,7 @@
             this.guna2Panel8.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel8.BorderRadius = 6;
             this.guna2Panel8.Controls.Add(this.guna2HtmlLabel10);
-            this.guna2Panel8.Controls.Add(this.guna2TextBox5);
+            this.guna2Panel8.Controls.Add(this.conPasswordBox);
             this.guna2Panel8.Location = new System.Drawing.Point(439, 402);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(380, 64);
@@ -838,41 +838,41 @@
             this.guna2HtmlLabel10.TabIndex = 16;
             this.guna2HtmlLabel10.Text = "CONFIRM PASSWORD:";
             // 
-            // guna2TextBox5
+            // conPasswordBox
             // 
-            this.guna2TextBox5.Animated = true;
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.LightGray;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox5.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox5.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox5.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox5.IconRight")));
-            this.guna2TextBox5.Location = new System.Drawing.Point(3, 21);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '●';
-            this.guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.LightGray;
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(374, 38);
-            this.guna2TextBox5.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox5.TabIndex = 4;
-            this.guna2TextBox5.UseSystemPasswordChar = true;
+            this.conPasswordBox.Animated = true;
+            this.conPasswordBox.BorderColor = System.Drawing.Color.LightGray;
+            this.conPasswordBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.conPasswordBox.DefaultText = "";
+            this.conPasswordBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.conPasswordBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.conPasswordBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.conPasswordBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.conPasswordBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.conPasswordBox.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.conPasswordBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conPasswordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.conPasswordBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.conPasswordBox.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.conPasswordBox.IconRight = ((System.Drawing.Image)(resources.GetObject("conPasswordBox.IconRight")));
+            this.conPasswordBox.Location = new System.Drawing.Point(3, 21);
+            this.conPasswordBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.conPasswordBox.Name = "conPasswordBox";
+            this.conPasswordBox.PasswordChar = '●';
+            this.conPasswordBox.PlaceholderForeColor = System.Drawing.Color.LightGray;
+            this.conPasswordBox.PlaceholderText = "";
+            this.conPasswordBox.SelectedText = "";
+            this.conPasswordBox.Size = new System.Drawing.Size(374, 38);
+            this.conPasswordBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.conPasswordBox.TabIndex = 4;
+            this.conPasswordBox.UseSystemPasswordChar = true;
             // 
             // guna2Panel9
             // 
             this.guna2Panel9.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel9.BorderRadius = 6;
             this.guna2Panel9.Controls.Add(this.guna2HtmlLabel11);
-            this.guna2Panel9.Controls.Add(this.guna2TextBox6);
+            this.guna2Panel9.Controls.Add(this.passwordBox);
             this.guna2Panel9.Location = new System.Drawing.Point(439, 321);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(381, 64);
@@ -889,34 +889,35 @@
             this.guna2HtmlLabel11.TabIndex = 16;
             this.guna2HtmlLabel11.Text = "PASSWORD:";
             // 
-            // guna2TextBox6
+            // passwordBox
             // 
-            this.guna2TextBox6.Animated = true;
-            this.guna2TextBox6.BorderColor = System.Drawing.Color.LightGray;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox6.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox6.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2TextBox6.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox6.IconRight")));
-            this.guna2TextBox6.Location = new System.Drawing.Point(3, 21);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '●';
-            this.guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.LightGray;
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(374, 38);
-            this.guna2TextBox6.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox6.TabIndex = 4;
-            this.guna2TextBox6.UseSystemPasswordChar = true;
+            this.passwordBox.Animated = true;
+            this.passwordBox.BorderColor = System.Drawing.Color.LightGray;
+            this.passwordBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordBox.DefaultText = "";
+            this.passwordBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.passwordBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.passwordBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.passwordBox.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.passwordBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.passwordBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.passwordBox.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.passwordBox.IconRight = ((System.Drawing.Image)(resources.GetObject("passwordBox.IconRight")));
+            this.passwordBox.Location = new System.Drawing.Point(3, 21);
+            this.passwordBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.passwordBox.Name = "passwordBox";
+            this.passwordBox.PasswordChar = '●';
+            this.passwordBox.PlaceholderForeColor = System.Drawing.Color.LightGray;
+            this.passwordBox.PlaceholderText = "";
+            this.passwordBox.SelectedText = "";
+            this.passwordBox.Size = new System.Drawing.Size(374, 38);
+            this.passwordBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.passwordBox.TabIndex = 4;
+            this.passwordBox.UseSystemPasswordChar = true;
+            this.passwordBox.IconRightClick += new System.EventHandler(this.passwordBox_IconRightClick);
             // 
             // guna2Panel10
             // 
@@ -1049,10 +1050,10 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox conPasswordBox;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2TextBox passwordBox;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
