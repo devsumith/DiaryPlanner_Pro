@@ -262,7 +262,22 @@ namespace DiaryPlanner_Pro
                         }
                         else
                             userPersonalData.Gender = (maleBtn.Checked) ? "Male" : "Female";
-
+                        break;
+                    // Handling birthdate selection
+                    case Guna2Panel panel when panel == birthdatePanel:
+                        // If user selected birthdate is empty, show an error message. Return false to indicate validation failure.
+                        // Else, set birthdate in user personal data.
+                        foreach (Control panelControl in panel.Controls)
+                        {
+                            if (panelControl is Guna2ComboBox comboBox)
+                            {
+                                if (comboBox.SelectedIndex == 0)
+                                {
+                                    MessageBox.Show("Complete your birth date", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    return false;
+                                }
+                            }
+                        }
                         break;
                     // Handling other Guna2TextBox controls : LastNameBox, FirstNameBox, MiddleNameBox
                     case Guna2TextBox textBox:
