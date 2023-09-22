@@ -185,12 +185,12 @@ namespace DiaryPlanner_Pro
                         userPictureBox.Image = selectedImage;
                     }
                     else
-                        MessageBox.Show("Select a Square Image", "PUP-SIS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Select a Square Image", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error selecting photo: {ex.Message}", "PUP-SIS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"Error selecting photo: {ex.Message}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
