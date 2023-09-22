@@ -78,6 +78,9 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.genderWarning = new System.Windows.Forms.PictureBox();
+            this.birthdateWarning = new System.Windows.Forms.PictureBox();
+            this.pictureWarning = new System.Windows.Forms.PictureBox();
             this.userPanel.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
@@ -92,6 +95,9 @@
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.loginFormPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.genderWarning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.birthdateWarning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureWarning)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -103,6 +109,7 @@
             this.userPanel.BackColor = System.Drawing.Color.Transparent;
             this.userPanel.BorderColor = System.Drawing.Color.Black;
             this.userPanel.BorderRadius = 10;
+            this.userPanel.Controls.Add(this.pictureWarning);
             this.userPanel.Controls.Add(this.strengthLabel);
             this.userPanel.Controls.Add(this.guna2Panel8);
             this.userPanel.Controls.Add(this.guna2Panel9);
@@ -409,6 +416,7 @@
             // 
             this.genderPanel.BorderColor = System.Drawing.Color.Transparent;
             this.genderPanel.BorderRadius = 6;
+            this.genderPanel.Controls.Add(this.genderWarning);
             this.genderPanel.Controls.Add(this.femaleBtn);
             this.genderPanel.Controls.Add(this.maleBtn);
             this.genderPanel.Controls.Add(this.guna2HtmlLabel8);
@@ -475,6 +483,7 @@
             // 
             this.birthdatePanel.BorderColor = System.Drawing.Color.Transparent;
             this.birthdatePanel.BorderRadius = 6;
+            this.birthdatePanel.Controls.Add(this.birthdateWarning);
             this.birthdatePanel.Controls.Add(this.yearBox);
             this.birthdatePanel.Controls.Add(this.monthBox);
             this.birthdatePanel.Controls.Add(this.dayBox);
@@ -989,6 +998,33 @@
             this.loginFormPanel.Size = new System.Drawing.Size(855, 551);
             this.loginFormPanel.TabIndex = 2;
             // 
+            // genderWarning
+            // 
+            this.genderWarning.Location = new System.Drawing.Point(184, 3);
+            this.genderWarning.Name = "genderWarning";
+            this.genderWarning.Size = new System.Drawing.Size(25, 25);
+            this.genderWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.genderWarning.TabIndex = 31;
+            this.genderWarning.TabStop = false;
+            // 
+            // birthdateWarning
+            // 
+            this.birthdateWarning.Location = new System.Drawing.Point(353, 3);
+            this.birthdateWarning.Name = "birthdateWarning";
+            this.birthdateWarning.Size = new System.Drawing.Size(25, 25);
+            this.birthdateWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.birthdateWarning.TabIndex = 32;
+            this.birthdateWarning.TabStop = false;
+            // 
+            // pictureWarning
+            // 
+            this.pictureWarning.Location = new System.Drawing.Point(717, 215);
+            this.pictureWarning.Name = "pictureWarning";
+            this.pictureWarning.Size = new System.Drawing.Size(25, 25);
+            this.pictureWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureWarning.TabIndex = 33;
+            this.pictureWarning.TabStop = false;
+            // 
             // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1026,6 +1062,9 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.loginFormPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.genderWarning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.birthdateWarning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureWarning)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1079,5 +1118,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2TextBox usernameBox;
         private Guna.UI2.WinForms.Guna2HtmlLabel strengthLabel;
+        private System.Windows.Forms.PictureBox genderWarning;
+        private System.Windows.Forms.PictureBox pictureWarning;
+        private System.Windows.Forms.PictureBox birthdateWarning;
     }
 }
