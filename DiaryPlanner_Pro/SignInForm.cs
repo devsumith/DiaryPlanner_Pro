@@ -16,6 +16,7 @@ namespace DiaryPlanner_Pro
 
         // Instance of class that will store the validated data.
         UserPersonalData userPersonalData = new UserPersonalData();
+        Functionality functions = new Functionality();
 
         #endregion
 
@@ -208,7 +209,7 @@ namespace DiaryPlanner_Pro
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
-
+            ValidateInformation();
         }
 
         private bool ValidateInformation()
@@ -225,12 +226,33 @@ namespace DiaryPlanner_Pro
                 birthdatePanel,
                 gmailAddressBox,
                 contactNumberBox,
+                userPictureBox,
                 usernameBox,
                 passwordBox,
                 conPasswordBox
             };
 
             #endregion
+
+            foreach (Control control in controlList)
+            {
+                switch (control)
+                {
+                    // Handling student picture
+                    case PictureBox pictureBox when pictureBox == userPictureBox:
+                        // If student picture is empty, show an error message. Return false to indicate validation failure.
+                        // Else, store the student picture in student data.
+                        if (functions.ImageEquals(pictureBox.Image, DiaryPlanner_Pro.Properties.Resources.profile_gradient))
+                        {
+                            MessageBox.Show("Select your Formal Picturee", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return false;
+                        }
+                        else
+                            userPersonalData.Image = pictureBox.Image;
+                        break;
+                
+                }
+            }
 
             return true;
         }
