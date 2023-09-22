@@ -12,6 +12,13 @@ namespace DiaryPlanner_Pro
 {
     public partial class SignInForm : Form
     {
+        #region CLASSES
+
+        // Instance of class that will store the validated data.
+        UserPersonalData userPersonalData = new UserPersonalData();
+
+        #endregion
+
         public SignInForm()
         {
             InitializeComponent();
