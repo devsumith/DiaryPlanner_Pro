@@ -239,19 +239,31 @@ namespace DiaryPlanner_Pro
             {
                 switch (control)
                 {
-                    // Handling student picture
+                    // Handling user picture
                     case PictureBox pictureBox when pictureBox == userPictureBox:
-                        // If student picture is empty, show an error message. Return false to indicate validation failure.
-                        // Else, store the student picture in student data.
+                        // If user picture is empty, show an error message. Return false to indicate validation failure.
+                        // Else, store the user picture in user personal data.
                         if (functions.ImageEquals(pictureBox.Image, DiaryPlanner_Pro.Properties.Resources.profile_gradient))
                         {
-                            MessageBox.Show("Select your Formal Picturee", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Select your Formal Picture", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return false;
                         }
                         else
                             userPersonalData.Image = pictureBox.Image;
                         break;
+                    // Handling gender selection
+                    case Guna2Panel panel when panel == genderPanel:
+                        // If user selected gender is empty, show an error message. Return false to indicate validation failure.
+                        // Else, set gender in user personal data.
+                        if (!maleBtn.Checked && !femaleBtn.Checked)
+                        {
+                            MessageBox.Show("Select your gender", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return false;
+                        }
+                        else
+                            userPersonalData.Gender = (maleBtn.Checked) ? "Male" : "Female";
 
+                        break;
                     // Handling other Guna2TextBox controls : LastNameBox, FirstNameBox, MiddleNameBox
                     case Guna2TextBox textBox:
                         if (String.IsNullOrEmpty(textBox.Text))
