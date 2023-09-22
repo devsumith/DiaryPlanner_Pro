@@ -198,5 +198,35 @@ namespace DiaryPlanner_Pro
         private bool IsSquareImage(Bitmap image) => image.Width == image.Height;
 
         #endregion
+
+        private void submitBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private bool ValidateInformation()
+        {
+            #region LIST OF CONTROLS THAT CONTAIN INFORMATION TO BE VALIDATED
+
+            List<Control> controlList = new List<Control>
+            {
+                lastNameBox,
+                firstNameBox,
+                middleNameBox,
+                extensionNameCBox,
+                genderPanel,
+                birthdatePanel,
+                gmailAddressBox,
+                contactNumberBox,
+                usernameBox,
+                passwordBox,
+                conPasswordBox
+            };
+
+            #endregion
+
+            return true;
+        }
+
     }
 }
