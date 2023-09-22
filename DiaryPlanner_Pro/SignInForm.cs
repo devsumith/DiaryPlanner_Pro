@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -221,7 +222,6 @@ namespace DiaryPlanner_Pro
                 lastNameBox,
                 firstNameBox,
                 middleNameBox,
-                extensionNameCBox,
                 genderPanel,
                 birthdatePanel,
                 gmailAddressBox,
@@ -234,6 +234,7 @@ namespace DiaryPlanner_Pro
 
             #endregion
 
+            // Loop through each control in controlList to be validated.
             foreach (Control control in controlList)
             {
                 switch (control)
@@ -250,7 +251,16 @@ namespace DiaryPlanner_Pro
                         else
                             userPersonalData.Image = pictureBox.Image;
                         break;
-                
+
+                    // Handling other Guna2TextBox controls : LastNameBox, FirstNameBox, MiddleNameBox
+                    case Guna2TextBox textBox:
+                        if (String.IsNullOrEmpty(textBox.Text))
+                        {
+                            MessageBox.Show($"Enter your {textBox.PlaceholderText}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            textBox.Focus();
+                            return false;
+                        }
+                        break;
                 }
             }
 
