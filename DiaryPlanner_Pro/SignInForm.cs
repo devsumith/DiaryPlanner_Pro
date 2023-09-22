@@ -160,5 +160,43 @@ namespace DiaryPlanner_Pro
         }
 
         #endregion
+
+        #region FUNCTIONS TO SELECT PHOTO WITH VALIDATION BY CLICKING A BUTTON
+
+        private void selectPictureBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // Set the filter to allow only JPEG and PNG image files.
+            openFileDialog.Filter = "Image Files|*.jpeg;*.jpg;*.png|All Files|*.*";
+
+            // To handle any exceptions that might occur during the process.
+            try
+            {
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Bitmap selectedImage = new Bitmap(openFileDialog.FileName);
+
+                    // Check if the loaded image is square using the IsSquareImage function.
+                    // If the image is square, set it as the student's picture.
+                    // Else, display a warning message.
+                    if (IsSquareImage(selectedImage))
+                    {
+                        userPictureBox.Image = selectedImage;
+                    }
+                    else
+                        MessageBox.Show("Select a Square Image", "PUP-SIS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error selecting photo: {ex.Message}", "PUP-SIS", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        // This method checks if an image is square based on its width and height.
+        private bool IsSquareImage(Bitmap image) => image.Width == image.Height;
+
+        #endregion
     }
 }
