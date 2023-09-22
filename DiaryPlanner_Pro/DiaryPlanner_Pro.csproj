@@ -75,6 +75,7 @@
     <Compile Include="SignInForm.Designer.cs">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserPersonalData.cs" />
     <EmbeddedResource Include="LoadingScreenForm.resx">
       <DependentUpon>LoadingScreenForm.cs</DependentUpon>
     </EmbeddedResource>

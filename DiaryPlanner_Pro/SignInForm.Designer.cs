@@ -179,6 +179,7 @@
             this.conPasswordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.conPasswordBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.conPasswordBox.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.conPasswordBox.IconLeftSize = new System.Drawing.Size(25, 25);
             this.conPasswordBox.IconRight = ((System.Drawing.Image)(resources.GetObject("conPasswordBox.IconRight")));
             this.conPasswordBox.Location = new System.Drawing.Point(3, 21);
             this.conPasswordBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -286,6 +287,7 @@
             this.guna2TextBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox7.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.guna2TextBox7.IconRightSize = new System.Drawing.Size(25, 25);
             this.guna2TextBox7.Location = new System.Drawing.Point(3, 21);
             this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TextBox7.Name = "guna2TextBox7";
@@ -383,6 +385,7 @@
             this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox4.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.guna2TextBox4.IconRightSize = new System.Drawing.Size(25, 25);
             this.guna2TextBox4.Location = new System.Drawing.Point(3, 21);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TextBox4.Name = "guna2TextBox4";
@@ -459,6 +462,7 @@
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.DimGray;
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(4, 4);
@@ -718,6 +722,7 @@
             this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox3.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.guna2TextBox3.IconRightSize = new System.Drawing.Size(25, 25);
             this.guna2TextBox3.Location = new System.Drawing.Point(3, 21);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TextBox3.Name = "guna2TextBox3";
@@ -803,6 +808,7 @@
             this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox2.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.guna2TextBox2.IconRightSize = new System.Drawing.Size(25, 25);
             this.guna2TextBox2.Location = new System.Drawing.Point(3, 21);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TextBox2.Name = "guna2TextBox2";
@@ -852,6 +858,7 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.guna2TextBox1.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.guna2TextBox1.IconRightSize = new System.Drawing.Size(25, 25);
             this.guna2TextBox1.Location = new System.Drawing.Point(3, 21);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2TextBox1.Name = "guna2TextBox1";
