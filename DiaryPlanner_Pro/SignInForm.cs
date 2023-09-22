@@ -285,8 +285,11 @@ namespace DiaryPlanner_Pro
                         {
                             MessageBox.Show($"Enter your {textBox.PlaceholderText}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             textBox.Focus();
+                            textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                             return false;
                         }
+                        else
+                            textBox.IconRight = null;
                         break;
                 }
             }
