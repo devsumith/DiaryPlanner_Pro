@@ -813,8 +813,8 @@
             this.middleNameBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.middleNameBox.Name = "middleNameBox";
             this.middleNameBox.PasswordChar = '\0';
-            this.middleNameBox.PlaceholderForeColor = System.Drawing.Color.LightGray;
-            this.middleNameBox.PlaceholderText = "";
+            this.middleNameBox.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.middleNameBox.PlaceholderText = "middle name";
             this.middleNameBox.SelectedText = "";
             this.middleNameBox.Size = new System.Drawing.Size(374, 38);
             this.middleNameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -863,8 +863,8 @@
             this.firstNameBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.firstNameBox.Name = "firstNameBox";
             this.firstNameBox.PasswordChar = '\0';
-            this.firstNameBox.PlaceholderForeColor = System.Drawing.Color.LightGray;
-            this.firstNameBox.PlaceholderText = "";
+            this.firstNameBox.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.firstNameBox.PlaceholderText = "first name";
             this.firstNameBox.SelectedText = "";
             this.firstNameBox.Size = new System.Drawing.Size(374, 38);
             this.firstNameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -913,8 +913,8 @@
             this.lastNameBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.lastNameBox.Name = "lastNameBox";
             this.lastNameBox.PasswordChar = '\0';
-            this.lastNameBox.PlaceholderForeColor = System.Drawing.Color.LightGray;
-            this.lastNameBox.PlaceholderText = "";
+            this.lastNameBox.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.lastNameBox.PlaceholderText = "last name";
             this.lastNameBox.SelectedText = "";
             this.lastNameBox.Size = new System.Drawing.Size(374, 38);
             this.lastNameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
