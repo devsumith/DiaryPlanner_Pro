@@ -208,13 +208,19 @@ namespace DiaryPlanner_Pro
 
         #endregion
 
+        #region FUNCTION FOR VALIDATING THE INFORMATION BEFORE THE APPROVAL OF SUBMISSION
+
         private void submitBtn_Click(object sender, EventArgs e)
         {
             ValidateInformation();
         }
 
+        #region FUNCTION FOR INFORMATION'S VALIDATION
+
         private bool ValidateInformation()
         {
+            bool ifReturn = true;
+
             #region LIST OF CONTROLS THAT CONTAIN INFORMATION TO BE VALIDATED
 
             List<Control> controlList = new List<Control>
@@ -295,27 +301,7 @@ namespace DiaryPlanner_Pro
                         break;
                     // Handling the validation of gmail address
                     case Guna2TextBox textBox when textBox == gmailAddressBox:
-                        if (string.IsNullOrEmpty(textBox.Text))
-                        {
-                            textBox.Focus();
-                            textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
-                            MessageBox.Show("Enter your valid gmail address", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                            return false;
-                        }
-                        else
-                        {
-                            userPersonalData.GmailAddress = textBox.Text;
-
-                            if (string.IsNullOrEmpty(userPersonalData.GmailAddress))
-                            {
-                                textBox.Focus();
-                                textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
-                                return false;
-                            }
-                            else
-                                textBox.IconRight = null;
-                        }
+                        ifReturn = ValidateAndAssign(textBox, userPersonalData, "Gmail Address", "GmailAddress");
                         break;
                     // Handling the validation of gmail address
                     case Guna2TextBox textBox when textBox == contactNumberBox:
@@ -358,6 +344,48 @@ namespace DiaryPlanner_Pro
 
             return true;
         }
+
+        #endregion
+
+        #region FUNCTION TO VALIDATE GMAIL ADDRESS AND CONTACT NUMBER
+
+        private bool ValidateAndAssign(Control textBox, UserPersonalData userData, string fieldName, string property)
+        {
+            string input = textBox.Text;
+
+            // Show an error message using the field name if the input is null or empty, then focus on the textbox and return true (indicating validation failure)
+            if (string.IsNullOrEmpty(input))
+            {
+                (textBox as Guna2TextBox).IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                textBox.Focus();
+
+                MessageBox.Show($"Enter your valid {fieldName}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            else
+            {
+                // Using reflection, set the value of the specified property in the 'userData' object to the 'input'
+                userData.GetType().GetProperty(property).SetValue(userData, input);
+
+                // Using reflection, get the value of the specified property in the 'userData' object,
+                // convert it to a string, check if it's empty or null
+                if (string.IsNullOrEmpty(userData.GetType().GetProperty(property).GetValue(userData) as string))
+                {
+                    (textBox as Guna2TextBox).IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                    textBox.Focus();
+
+                    return false;
+                }
+                else
+                    (textBox as Guna2TextBox).IconRight = null;
+            }
+
+            return true;
+        }
+
+        #endregion
+
+        #endregion
 
     }
 }
