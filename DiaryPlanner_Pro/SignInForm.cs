@@ -104,6 +104,8 @@ namespace DiaryPlanner_Pro
                 // If it is, display a message indicating that a minimum of 6 characters is required.
                 strengthLabel.Text = "Minimum 6 characters";
                 strengthLabel.ForeColor = Color.Gray;
+
+                strength = 0;
                 return;
             }
 
@@ -148,6 +150,7 @@ namespace DiaryPlanner_Pro
                 strength++;
             if (hasSpecialChar)
                 strength++;
+
 
             return strength;
         }
@@ -312,7 +315,6 @@ namespace DiaryPlanner_Pro
                         break;
                     // Handling the validation of password strength
                     case Guna2TextBox textBox when textBox == passwordBox:
-                        MessageBox.Show(strength.ToString());
                         if (String.IsNullOrEmpty(passwordBox.Text))
                         {
                             textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
@@ -442,6 +444,5 @@ namespace DiaryPlanner_Pro
         #endregion
 
         #endregion
-
     }
 }

@@ -135,7 +135,7 @@
             this.userPanel.Location = new System.Drawing.Point(8, 7);
             this.userPanel.Name = "userPanel";
             this.userPanel.Size = new System.Drawing.Size(839, 536);
-            this.userPanel.TabIndex = 1;
+            this.userPanel.TabIndex = 0;
             // 
             // pictureWarning
             // 
@@ -168,7 +168,7 @@
             this.guna2Panel8.Location = new System.Drawing.Point(439, 407);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(380, 64);
-            this.guna2Panel8.TabIndex = 29;
+            this.guna2Panel8.TabIndex = 11;
             // 
             // guna2HtmlLabel10
             // 
@@ -209,7 +209,7 @@
             this.conPasswordBox.SelectedText = "";
             this.conPasswordBox.Size = new System.Drawing.Size(374, 38);
             this.conPasswordBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.conPasswordBox.TabIndex = 4;
+            this.conPasswordBox.TabIndex = 0;
             this.conPasswordBox.UseSystemPasswordChar = true;
             this.conPasswordBox.IconRightClick += new System.EventHandler(this.conPasswordBox_IconRightClick);
             // 
@@ -222,7 +222,7 @@
             this.guna2Panel9.Location = new System.Drawing.Point(439, 321);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(381, 64);
-            this.guna2Panel9.TabIndex = 28;
+            this.guna2Panel9.TabIndex = 10;
             // 
             // guna2HtmlLabel11
             // 
@@ -263,7 +263,7 @@
             this.passwordBox.SelectedText = "";
             this.passwordBox.Size = new System.Drawing.Size(374, 38);
             this.passwordBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.passwordBox.TabIndex = 4;
+            this.passwordBox.TabIndex = 0;
             this.passwordBox.UseSystemPasswordChar = true;
             this.passwordBox.IconRightClick += new System.EventHandler(this.passwordBox_IconRightClick);
             this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
@@ -277,7 +277,7 @@
             this.guna2Panel10.Location = new System.Drawing.Point(439, 251);
             this.guna2Panel10.Name = "guna2Panel10";
             this.guna2Panel10.Size = new System.Drawing.Size(381, 64);
-            this.guna2Panel10.TabIndex = 27;
+            this.guna2Panel10.TabIndex = 9;
             // 
             // guna2HtmlLabel12
             // 
@@ -314,7 +314,7 @@
             this.usernameBox.SelectedText = "";
             this.usernameBox.Size = new System.Drawing.Size(374, 38);
             this.usernameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.usernameBox.TabIndex = 4;
+            this.usernameBox.TabIndex = 0;
             // 
             // selectPictureBtn
             // 
@@ -332,7 +332,7 @@
             this.selectPictureBtn.Location = new System.Drawing.Point(554, 210);
             this.selectPictureBtn.Name = "selectPictureBtn";
             this.selectPictureBtn.Size = new System.Drawing.Size(160, 35);
-            this.selectPictureBtn.TabIndex = 26;
+            this.selectPictureBtn.TabIndex = 8;
             this.selectPictureBtn.Text = "Select picture";
             this.selectPictureBtn.Click += new System.EventHandler(this.selectPictureBtn_Click);
             // 
@@ -373,7 +373,7 @@
             this.guna2Panel7.Location = new System.Drawing.Point(20, 461);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(381, 64);
-            this.guna2Panel7.TabIndex = 24;
+            this.guna2Panel7.TabIndex = 7;
             // 
             // guna2HtmlLabel9
             // 
@@ -413,7 +413,7 @@
             this.contactNumberBox.SelectedText = "";
             this.contactNumberBox.Size = new System.Drawing.Size(374, 38);
             this.contactNumberBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.contactNumberBox.TabIndex = 4;
+            this.contactNumberBox.TabIndex = 0;
             // 
             // panel2
             // 
@@ -434,7 +434,7 @@
             this.genderPanel.Location = new System.Drawing.Point(20, 256);
             this.genderPanel.Name = "genderPanel";
             this.genderPanel.Size = new System.Drawing.Size(212, 59);
-            this.genderPanel.TabIndex = 22;
+            this.genderPanel.TabIndex = 3;
             // 
             // genderWarning
             // 
@@ -461,7 +461,7 @@
             this.femaleBtn.Location = new System.Drawing.Point(113, 27);
             this.femaleBtn.Name = "femaleBtn";
             this.femaleBtn.Size = new System.Drawing.Size(78, 23);
-            this.femaleBtn.TabIndex = 18;
+            this.femaleBtn.TabIndex = 1;
             this.femaleBtn.Text = "FEMALE";
             this.femaleBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.femaleBtn.UncheckedState.BorderThickness = 2;
@@ -482,7 +482,7 @@
             this.maleBtn.Location = new System.Drawing.Point(43, 27);
             this.maleBtn.Name = "maleBtn";
             this.maleBtn.Size = new System.Drawing.Size(63, 23);
-            this.maleBtn.TabIndex = 17;
+            this.maleBtn.TabIndex = 0;
             this.maleBtn.Text = "MALE";
             this.maleBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.maleBtn.UncheckedState.BorderThickness = 2;
@@ -513,7 +513,7 @@
             this.birthdatePanel.Location = new System.Drawing.Point(20, 321);
             this.birthdatePanel.Name = "birthdatePanel";
             this.birthdatePanel.Size = new System.Drawing.Size(381, 64);
-            this.birthdatePanel.TabIndex = 21;
+            this.birthdatePanel.TabIndex = 5;
             // 
             // birthdateWarning
             // 
@@ -622,7 +622,7 @@
             this.yearBox.Size = new System.Drawing.Size(120, 36);
             this.yearBox.StartIndex = 0;
             this.yearBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.yearBox.TabIndex = 25;
+            this.yearBox.TabIndex = 2;
             // 
             // monthBox
             // 
@@ -658,7 +658,7 @@
             this.monthBox.Size = new System.Drawing.Size(158, 36);
             this.monthBox.StartIndex = 0;
             this.monthBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.monthBox.TabIndex = 24;
+            this.monthBox.TabIndex = 1;
             // 
             // dayBox
             // 
@@ -713,7 +713,7 @@
             this.dayBox.Size = new System.Drawing.Size(86, 36);
             this.dayBox.StartIndex = 0;
             this.dayBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.dayBox.TabIndex = 23;
+            this.dayBox.TabIndex = 0;
             // 
             // guna2HtmlLabel7
             // 
@@ -735,7 +735,7 @@
             this.guna2Panel4.Location = new System.Drawing.Point(20, 391);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(381, 64);
-            this.guna2Panel4.TabIndex = 20;
+            this.guna2Panel4.TabIndex = 6;
             // 
             // guna2HtmlLabel6
             // 
@@ -774,7 +774,7 @@
             this.gmailAddressBox.SelectedText = "";
             this.gmailAddressBox.Size = new System.Drawing.Size(374, 38);
             this.gmailAddressBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.gmailAddressBox.TabIndex = 4;
+            this.gmailAddressBox.TabIndex = 0;
             // 
             // guna2HtmlLabel5
             // 
@@ -810,7 +810,7 @@
             this.extensionNameCBox.Size = new System.Drawing.Size(161, 36);
             this.extensionNameCBox.StartIndex = 0;
             this.extensionNameCBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.extensionNameCBox.TabIndex = 18;
+            this.extensionNameCBox.TabIndex = 4;
             // 
             // guna2Panel3
             // 
@@ -821,7 +821,7 @@
             this.guna2Panel3.Location = new System.Drawing.Point(20, 186);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(380, 64);
-            this.guna2Panel3.TabIndex = 17;
+            this.guna2Panel3.TabIndex = 2;
             // 
             // guna2HtmlLabel4
             // 
@@ -831,7 +831,7 @@
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(4, 4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(101, 17);
-            this.guna2HtmlLabel4.TabIndex = 16;
+            this.guna2HtmlLabel4.TabIndex = 1;
             this.guna2HtmlLabel4.Text = "MIDDLE NAME:";
             // 
             // middleNameBox
@@ -858,7 +858,7 @@
             this.middleNameBox.SelectedText = "";
             this.middleNameBox.Size = new System.Drawing.Size(374, 38);
             this.middleNameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.middleNameBox.TabIndex = 4;
+            this.middleNameBox.TabIndex = 0;
             // 
             // guna2Panel2
             // 
@@ -869,7 +869,7 @@
             this.guna2Panel2.Location = new System.Drawing.Point(20, 116);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(381, 64);
-            this.guna2Panel2.TabIndex = 16;
+            this.guna2Panel2.TabIndex = 1;
             // 
             // guna2HtmlLabel3
             // 
@@ -906,7 +906,8 @@
             this.firstNameBox.SelectedText = "";
             this.firstNameBox.Size = new System.Drawing.Size(374, 38);
             this.firstNameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.firstNameBox.TabIndex = 4;
+            this.firstNameBox.TabIndex = 0;
+            this.firstNameBox.TabStop = false;
             // 
             // guna2Panel1
             // 
@@ -917,7 +918,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(20, 46);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(381, 64);
-            this.guna2Panel1.TabIndex = 15;
+            this.guna2Panel1.TabIndex = 0;
             // 
             // guna2HtmlLabel2
             // 
@@ -954,7 +955,8 @@
             this.lastNameBox.SelectedText = "";
             this.lastNameBox.Size = new System.Drawing.Size(374, 38);
             this.lastNameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.lastNameBox.TabIndex = 4;
+            this.lastNameBox.TabIndex = 0;
+            this.lastNameBox.TabStop = false;
             // 
             // submitBtn
             // 
@@ -972,7 +974,7 @@
             this.submitBtn.Location = new System.Drawing.Point(439, 487);
             this.submitBtn.Name = "submitBtn";
             this.submitBtn.Size = new System.Drawing.Size(381, 38);
-            this.submitBtn.TabIndex = 14;
+            this.submitBtn.TabIndex = 12;
             this.submitBtn.Text = "Submit and continue";
             this.submitBtn.Click += new System.EventHandler(this.submitBtn_Click);
             // 
@@ -1005,7 +1007,7 @@
             this.guna2ControlBox2.Location = new System.Drawing.Point(754, 6);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(38, 25);
-            this.guna2ControlBox2.TabIndex = 2;
+            this.guna2ControlBox2.TabIndex = 13;
             // 
             // guna2ControlBox1
             // 
@@ -1016,7 +1018,7 @@
             this.guna2ControlBox1.Location = new System.Drawing.Point(794, 6);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(38, 25);
-            this.guna2ControlBox1.TabIndex = 1;
+            this.guna2ControlBox1.TabIndex = 14;
             // 
             // loginFormPanel
             // 
@@ -1029,7 +1031,7 @@
             this.loginFormPanel.Location = new System.Drawing.Point(0, 0);
             this.loginFormPanel.Name = "loginFormPanel";
             this.loginFormPanel.Size = new System.Drawing.Size(855, 551);
-            this.loginFormPanel.TabIndex = 2;
+            this.loginFormPanel.TabIndex = 0;
             // 
             // SignInForm
             // 
