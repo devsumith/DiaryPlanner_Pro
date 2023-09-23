@@ -21,6 +21,12 @@ namespace DiaryPlanner_Pro
 
         #endregion
 
+        #region FIELDS
+
+        int strength;
+
+        #endregion
+
         public SignInForm()
         {
             InitializeComponent();
@@ -101,7 +107,7 @@ namespace DiaryPlanner_Pro
             }
 
             // Use Task.Run to perform the strength evaluation asynchronously.
-            int strength = await Task.Run(() => CalculatePasswordStrength(password));
+            strength = await Task.Run(() => CalculatePasswordStrength(password));
 
             // Update the UI to reflect the password strength.
             UpdateStrengthLabel(strength);

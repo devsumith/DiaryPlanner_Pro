@@ -251,6 +251,7 @@
             this.passwordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.passwordBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.passwordBox.HoverState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.passwordBox.IconLeftSize = new System.Drawing.Size(25, 25);
             this.passwordBox.IconRight = ((System.Drawing.Image)(resources.GetObject("passwordBox.IconRight")));
             this.passwordBox.Location = new System.Drawing.Point(3, 21);
             this.passwordBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
