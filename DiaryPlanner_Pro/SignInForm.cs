@@ -301,31 +301,11 @@ namespace DiaryPlanner_Pro
                         break;
                     // Handling the validation of gmail address
                     case Guna2TextBox textBox when textBox == gmailAddressBox:
-                        ifReturn = ValidateAndAssign(textBox, userPersonalData, "Gmail Address", "GmailAddress");
+                        ifReturn = ValidateAndAssign(textBox, userPersonalData, "Gmail address", "GmailAddress");
                         break;
                     // Handling the validation of gmail address
                     case Guna2TextBox textBox when textBox == contactNumberBox:
-                        if (string.IsNullOrEmpty(textBox.Text))
-                        {
-                            textBox.Focus();
-                            textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
-                            MessageBox.Show("Enter your valid phone number", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                            return false;
-                        }
-                        else
-                        {
-                            userPersonalData.ContactNumber = textBox.Text;
-
-                            if (string.IsNullOrEmpty(userPersonalData.ContactNumber))
-                            {
-                                textBox.Focus();
-                                textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
-                                return false;
-                            }
-                            else
-                                textBox.IconRight = null;
-                        }
+                        ifReturn = ValidateAndAssign(textBox, userPersonalData, "phone number", "ContactNumber");
                         break;
                     // Handling other Guna2TextBox controls : LastNameBox, FirstNameBox, MiddleNameBox
                     case Guna2TextBox textBox:
@@ -340,6 +320,10 @@ namespace DiaryPlanner_Pro
                             textBox.IconRight = null;
                         break;
                 }
+
+                // If above statement return a false value for ifReturn, this statement will return false to indicate validation failure.
+                if (!ifReturn)
+                    return false;
             }
 
             return true;
@@ -349,14 +333,14 @@ namespace DiaryPlanner_Pro
 
         #region FUNCTION TO VALIDATE GMAIL ADDRESS AND CONTACT NUMBER
 
-        private bool ValidateAndAssign(Control textBox, UserPersonalData userData, string fieldName, string property)
+        private bool ValidateAndAssign(Guna2TextBox textBox, UserPersonalData userData, string fieldName, string property)
         {
             string input = textBox.Text;
 
             // Show an error message using the field name if the input is null or empty, then focus on the textbox and return true (indicating validation failure)
             if (string.IsNullOrEmpty(input))
             {
-                (textBox as Guna2TextBox).IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                 textBox.Focus();
 
                 MessageBox.Show($"Enter your valid {fieldName}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -371,13 +355,13 @@ namespace DiaryPlanner_Pro
                 // convert it to a string, check if it's empty or null
                 if (string.IsNullOrEmpty(userData.GetType().GetProperty(property).GetValue(userData) as string))
                 {
-                    (textBox as Guna2TextBox).IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                    textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                     textBox.Focus();
 
                     return false;
                 }
                 else
-                    (textBox as Guna2TextBox).IconRight = null;
+                    textBox.IconRight = null;
             }
 
             return true;
