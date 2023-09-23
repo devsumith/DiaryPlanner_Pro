@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.userPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.pictureWarning = new System.Windows.Forms.PictureBox();
             this.strengthLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -50,10 +51,12 @@
             this.contactNumberBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.genderPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.genderWarning = new System.Windows.Forms.PictureBox();
             this.femaleBtn = new Guna.UI2.WinForms.Guna2RadioButton();
             this.maleBtn = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.birthdatePanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.birthdateWarning = new System.Windows.Forms.PictureBox();
             this.yearBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.monthBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dayBox = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -78,10 +81,8 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.genderWarning = new System.Windows.Forms.PictureBox();
-            this.birthdateWarning = new System.Windows.Forms.PictureBox();
-            this.pictureWarning = new System.Windows.Forms.PictureBox();
             this.userPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureWarning)).BeginInit();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             this.guna2Panel10.SuspendLayout();
@@ -89,15 +90,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
             this.guna2Panel7.SuspendLayout();
             this.genderPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.genderWarning)).BeginInit();
             this.birthdatePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.birthdateWarning)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.loginFormPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.genderWarning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.birthdateWarning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureWarning)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -136,6 +136,17 @@
             this.userPanel.Name = "userPanel";
             this.userPanel.Size = new System.Drawing.Size(839, 536);
             this.userPanel.TabIndex = 1;
+            // 
+            // pictureWarning
+            // 
+            this.pictureWarning.Image = global::DiaryPlanner_Pro.Properties.Resources.warningLogo;
+            this.pictureWarning.Location = new System.Drawing.Point(717, 215);
+            this.pictureWarning.Name = "pictureWarning";
+            this.pictureWarning.Size = new System.Drawing.Size(25, 25);
+            this.pictureWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureWarning.TabIndex = 33;
+            this.pictureWarning.TabStop = false;
+            this.pictureWarning.Visible = false;
             // 
             // strengthLabel
             // 
@@ -425,6 +436,17 @@
             this.genderPanel.Size = new System.Drawing.Size(212, 59);
             this.genderPanel.TabIndex = 22;
             // 
+            // genderWarning
+            // 
+            this.genderWarning.Image = global::DiaryPlanner_Pro.Properties.Resources.warningLogo;
+            this.genderWarning.Location = new System.Drawing.Point(184, 3);
+            this.genderWarning.Name = "genderWarning";
+            this.genderWarning.Size = new System.Drawing.Size(25, 25);
+            this.genderWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.genderWarning.TabIndex = 31;
+            this.genderWarning.TabStop = false;
+            this.genderWarning.Visible = false;
+            // 
             // femaleBtn
             // 
             this.femaleBtn.Animated = true;
@@ -492,6 +514,17 @@
             this.birthdatePanel.Name = "birthdatePanel";
             this.birthdatePanel.Size = new System.Drawing.Size(381, 64);
             this.birthdatePanel.TabIndex = 21;
+            // 
+            // birthdateWarning
+            // 
+            this.birthdateWarning.Image = global::DiaryPlanner_Pro.Properties.Resources.warningLogo;
+            this.birthdateWarning.Location = new System.Drawing.Point(353, 3);
+            this.birthdateWarning.Name = "birthdateWarning";
+            this.birthdateWarning.Size = new System.Drawing.Size(25, 25);
+            this.birthdateWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.birthdateWarning.TabIndex = 32;
+            this.birthdateWarning.TabStop = false;
+            this.birthdateWarning.Visible = false;
             // 
             // yearBox
             // 
@@ -998,33 +1031,6 @@
             this.loginFormPanel.Size = new System.Drawing.Size(855, 551);
             this.loginFormPanel.TabIndex = 2;
             // 
-            // genderWarning
-            // 
-            this.genderWarning.Location = new System.Drawing.Point(184, 3);
-            this.genderWarning.Name = "genderWarning";
-            this.genderWarning.Size = new System.Drawing.Size(25, 25);
-            this.genderWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.genderWarning.TabIndex = 31;
-            this.genderWarning.TabStop = false;
-            // 
-            // birthdateWarning
-            // 
-            this.birthdateWarning.Location = new System.Drawing.Point(353, 3);
-            this.birthdateWarning.Name = "birthdateWarning";
-            this.birthdateWarning.Size = new System.Drawing.Size(25, 25);
-            this.birthdateWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.birthdateWarning.TabIndex = 32;
-            this.birthdateWarning.TabStop = false;
-            // 
-            // pictureWarning
-            // 
-            this.pictureWarning.Location = new System.Drawing.Point(717, 215);
-            this.pictureWarning.Name = "pictureWarning";
-            this.pictureWarning.Size = new System.Drawing.Size(25, 25);
-            this.pictureWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureWarning.TabIndex = 33;
-            this.pictureWarning.TabStop = false;
-            // 
             // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1039,6 +1045,7 @@
             this.Text = "Diary Planner Pro";
             this.userPanel.ResumeLayout(false);
             this.userPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureWarning)).EndInit();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
             this.guna2Panel9.ResumeLayout(false);
@@ -1051,8 +1058,10 @@
             this.guna2Panel7.PerformLayout();
             this.genderPanel.ResumeLayout(false);
             this.genderPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.genderWarning)).EndInit();
             this.birthdatePanel.ResumeLayout(false);
             this.birthdatePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.birthdateWarning)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
@@ -1062,9 +1071,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.loginFormPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.genderWarning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.birthdateWarning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureWarning)).EndInit();
             this.ResumeLayout(false);
 
         }
