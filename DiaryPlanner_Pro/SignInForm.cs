@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -313,12 +314,37 @@ namespace DiaryPlanner_Pro
                     case Guna2TextBox textBox when textBox == contactNumberBox:
                         ifReturn = ValidateAndAssign(textBox, userPersonalData, "phone number", "ContactNumber");
                         break;
+                    // Handling the validation of password strength
+                    case Guna2TextBox textBox when textBox == passwordBox:
+                        if (String.IsNullOrEmpty(passwordBox.Text))
+                        {
+                            textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                            textBox.Focus();
+
+                            MessageBox.Show($"Enter your password", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return false;
+                        }
+                        else
+                        {
+                            if (strength <= 2)
+                            {
+                                textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                                textBox.Focus();
+
+                                MessageBox.Show($"Password must be moderate or strong", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                return false;
+                            }
+                            else
+                                textBox.IconLeft = null;
+                        }
+                        break;
                     // Handling other Guna2TextBox controls : LastNameBox, FirstNameBox, MiddleNameBox
                     case Guna2TextBox textBox:
                         if (String.IsNullOrEmpty(textBox.Text))
                         {
-                            textBox.Focus();
                             textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                            textBox.Focus();
+
                             MessageBox.Show($"Enter your {textBox.PlaceholderText}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return false;
                         }
