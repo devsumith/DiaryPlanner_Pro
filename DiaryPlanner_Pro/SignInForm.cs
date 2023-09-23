@@ -312,6 +312,7 @@ namespace DiaryPlanner_Pro
                         break;
                     // Handling the validation of password strength
                     case Guna2TextBox textBox when textBox == passwordBox:
+                        MessageBox.Show(strength.ToString());
                         if (String.IsNullOrEmpty(passwordBox.Text))
                         {
                             textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
@@ -322,17 +323,29 @@ namespace DiaryPlanner_Pro
                         }
                         else
                         {
-                            // Check the strength of the password if it's weak
-                            if (strength <= 2)
+                            // Check the length of the password, to ensure that it is six or above characters
+                            if (passwordBox.Text.Length < 6)
                             {
                                 textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                                 textBox.Focus();
 
-                                MessageBox.Show($"Password must be moderate or strong", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                MessageBox.Show($"Password must be 6 characters or above", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 return false;
                             }
                             else
-                                textBox.IconLeft = null;
+                            {
+                                // Check the strength of the password if it's weak
+                                if (strength <= 2)
+                                {
+                                    textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                                    textBox.Focus();
+
+                                    MessageBox.Show($"Password must be moderate or strong", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    return false;
+                                }
+                                else
+                                    textBox.IconLeft = null;
+                            }
                         }
                         break;
                     // Handling the validation of password confirmation
