@@ -245,11 +245,16 @@ namespace DiaryPlanner_Pro
                         // Else, store the user picture in user personal data.
                         if (functions.ImageEquals(pictureBox.Image, DiaryPlanner_Pro.Properties.Resources.profile_gradient))
                         {
+                            pictureWarning.Visible = true;
+
                             MessageBox.Show("Select your Formal Picture", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return false;
                         }
                         else
+                        {
                             userPersonalData.Image = pictureBox.Image;
+                            pictureWarning.Visible = false;
+                        }
                         break;
                     // Handling gender selection
                     case Guna2Panel panel when panel == genderPanel:
@@ -279,6 +284,7 @@ namespace DiaryPlanner_Pro
                                 if (comboBox.SelectedIndex == 0)
                                 {
                                     birthdateWarning.Visible = true;
+
                                     MessageBox.Show("Complete your birth date", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     return false;
                                 }
@@ -287,7 +293,32 @@ namespace DiaryPlanner_Pro
 
                         birthdateWarning.Visible = false;
                         break;
+                    // Handling the validation of gmail address
                     case Guna2TextBox textBox when textBox == gmailAddressBox:
+                        if (string.IsNullOrEmpty(textBox.Text))
+                        {
+                            textBox.Focus();
+                            textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                            MessageBox.Show("Enter your valid gmail address", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                            return false;
+                        }
+                        else
+                        {
+                            userPersonalData.GmailAddress = textBox.Text;
+
+                            if (string.IsNullOrEmpty(userPersonalData.GmailAddress))
+                            {
+                                textBox.Focus();
+                                textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                                return false;
+                            }
+                            else
+                                textBox.IconRight = null;
+                        }
+                        break;
+                    // Handling the validation of gmail address
+                    case Guna2TextBox textBox when textBox == contactNumberBox:
                         if (string.IsNullOrEmpty(textBox.Text))
                         {
                             textBox.Focus();
@@ -298,9 +329,9 @@ namespace DiaryPlanner_Pro
                         }
                         else
                         {
-                            userPersonalData.GmailAddress = textBox.Text;
+                            userPersonalData.ContactNumber = textBox.Text;
 
-                            if (string.IsNullOrEmpty(userPersonalData.GmailAddress))
+                            if (string.IsNullOrEmpty(userPersonalData.ContactNumber))
                             {
                                 textBox.Focus();
                                 textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
