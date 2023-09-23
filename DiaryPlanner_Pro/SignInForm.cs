@@ -291,9 +291,7 @@ namespace DiaryPlanner_Pro
                         // If user selected birthdate is empty, show an error message. Return false to indicate validation failure.
                         // Else, set birthdate in user personal data.
                         foreach (Control panelControl in panel.Controls)
-                        {
                             if (panelControl is Guna2ComboBox comboBox)
-                            {
                                 if (comboBox.SelectedIndex == 0)
                                 {
                                     birthdateWarning.Visible = true;
@@ -301,8 +299,6 @@ namespace DiaryPlanner_Pro
                                     MessageBox.Show("Complete your birth date", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     return false;
                                 }
-                            }
-                        }
 
                         birthdateWarning.Visible = false;
                         break;
@@ -326,6 +322,7 @@ namespace DiaryPlanner_Pro
                         }
                         else
                         {
+                            // Check the strength of the password if it's weak
                             if (strength <= 2)
                             {
                                 textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
@@ -336,6 +333,36 @@ namespace DiaryPlanner_Pro
                             }
                             else
                                 textBox.IconLeft = null;
+                        }
+                        break;
+                    // Handling the validation of password confirmation
+                    case Guna2TextBox textBox when textBox == conPasswordBox:
+                        if (String.IsNullOrEmpty(conPasswordBox.Text))
+                        {
+                            textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                            textBox.Focus();
+
+                            MessageBox.Show($"Enter your password confirmation", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return false;
+                        }
+                        else
+                        {
+                            // Check if the confirmation password does not match the original password
+                            if (conPasswordBox.Text != passwordBox.Text)
+                            {
+                                textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                                textBox.Focus();
+
+                                MessageBox.Show($"The password confirmation does not match", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                return false;
+                            }
+                            else
+                            {
+                                textBox.IconLeft = null;
+
+                                // Set the password in userPersonalData to the password entered in the original password box
+                                userPersonalData.Password = passwordBox.Text;
+                            }
                         }
                         break;
                     // Handling other Guna2TextBox controls : LastNameBox, FirstNameBox, MiddleNameBox
