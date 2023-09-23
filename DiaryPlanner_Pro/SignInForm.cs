@@ -257,11 +257,16 @@ namespace DiaryPlanner_Pro
                         // Else, set gender in user personal data.
                         if (!maleBtn.Checked && !femaleBtn.Checked)
                         {
+                            genderWarning.Visible = true;
+
                             MessageBox.Show("Select your gender", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return false;
                         }
                         else
+                        {
                             userPersonalData.Gender = (maleBtn.Checked) ? "Male" : "Female";
+                            genderWarning.Visible = false;
+                        }
                         break;
                     // Handling birthdate selection
                     case Guna2Panel panel when panel == birthdatePanel:
@@ -273,19 +278,45 @@ namespace DiaryPlanner_Pro
                             {
                                 if (comboBox.SelectedIndex == 0)
                                 {
+                                    birthdateWarning.Visible = true;
                                     MessageBox.Show("Complete your birth date", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     return false;
                                 }
                             }
+                        }
+
+                        birthdateWarning.Visible = false;
+                        break;
+                    case Guna2TextBox textBox when textBox == gmailAddressBox:
+                        if (string.IsNullOrEmpty(textBox.Text))
+                        {
+                            textBox.Focus();
+                            textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                            MessageBox.Show("Enter your valid phone number", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                            return false;
+                        }
+                        else
+                        {
+                            userPersonalData.GmailAddress = textBox.Text;
+
+                            if (string.IsNullOrEmpty(userPersonalData.GmailAddress))
+                            {
+                                textBox.Focus();
+                                textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                                return false;
+                            }
+                            else
+                                textBox.IconRight = null;
                         }
                         break;
                     // Handling other Guna2TextBox controls : LastNameBox, FirstNameBox, MiddleNameBox
                     case Guna2TextBox textBox:
                         if (String.IsNullOrEmpty(textBox.Text))
                         {
-                            MessageBox.Show($"Enter your {textBox.PlaceholderText}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             textBox.Focus();
                             textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
+                            MessageBox.Show($"Enter your {textBox.PlaceholderText}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return false;
                         }
                         else
