@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.labelMessage = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -47,7 +43,7 @@
             // labelMessage
             // 
             this.labelMessage.AutoSize = true;
-            this.labelMessage.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelMessage.Font = new System.Drawing.Font("Bahnschrift", 14.25F);
             this.labelMessage.ForeColor = System.Drawing.Color.White;
             this.labelMessage.Location = new System.Drawing.Point(59, 50);
             this.labelMessage.Name = "labelMessage";
@@ -57,7 +53,7 @@
             // 
             // timer
             // 
-            //this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // guna2Elipse1
             // 
@@ -76,7 +72,7 @@
             // noticeLabel
             // 
             this.noticeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.noticeLabel.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.noticeLabel.Font = new System.Drawing.Font("Bahnschrift", 12F);
             this.noticeLabel.ForeColor = System.Drawing.Color.White;
             this.noticeLabel.Location = new System.Drawing.Point(14, 4);
             this.noticeLabel.Name = "noticeLabel";
@@ -88,28 +84,23 @@
             // 
             this.removeBtn.BackColor = System.Drawing.Color.Transparent;
             this.removeBtn.CustomClick = true;
-            this.removeBtn.CustomizableEdges = customizableEdges1;
             this.removeBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.removeBtn.FillColor = System.Drawing.Color.Transparent;
             this.removeBtn.IconColor = System.Drawing.Color.White;
             this.removeBtn.Location = new System.Drawing.Point(328, 0);
             this.removeBtn.Name = "removeBtn";
-            this.removeBtn.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.removeBtn.Size = new System.Drawing.Size(39, 31);
             this.removeBtn.TabIndex = 0;
-            //this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
             // 
             // containerControl
             // 
             this.containerControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(118)))), ((int)(((byte)(236)))));
             this.containerControl.Controls.Add(this.noticeLabel);
             this.containerControl.Controls.Add(this.removeBtn);
-            this.containerControl.CustomizableEdges = customizableEdges3;
             this.containerControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.containerControl.FillColor = System.Drawing.Color.Empty;
             this.containerControl.Location = new System.Drawing.Point(0, 0);
             this.containerControl.Name = "containerControl";
-            this.containerControl.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.containerControl.Size = new System.Drawing.Size(367, 31);
             this.containerControl.TabIndex = 4;
             this.containerControl.Text = "guna2ContainerControl1";
@@ -122,7 +113,7 @@
             this.Controls.Add(this.containerControl);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelMessage);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AlertForm";
             this.ShowIcon = false;
