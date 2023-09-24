@@ -43,5 +43,45 @@ namespace DiaryPlanner_Pro
         {
             InitializeComponent();
         }
+
+        #region FUNCTION FOR TIMER TICK
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            // Event handler for the Timer's tick event.
+
+            switch (action)
+            {
+                case Action.wait:
+                    // If the action is "wait", set the timer interval to 5 seconds and change the action to "close".
+                    timer.Interval = 2500;
+                    action = Action.close;
+                    break;
+                case Action.start:
+                    // If the action is "start", set the timer interval to 1 millisecond and gradually increase opacity.
+                    timer.Interval = 1;
+                    Opacity += 0.1;
+
+                    // Move the form to the left until its X coordinate matches the target X coordinate.
+                    if (x < Location.X)
+                        Left--;
+                    else
+                        if (Opacity == 1.0)
+                        action = Action.wait;
+                    break;
+                case Action.close:
+                    // If the action is "close", set the timer interval to 1 millisecond and gradually decrease opacity.
+                    timer.Interval = 1;
+                    Opacity -= 0.1;
+
+                    // Move the form to the left and close it when opacity reaches 0.
+                    Left -= 3;
+                    if (base.Opacity == 0.0)
+                        base.Close();
+                    break;
+            }
+        }
+
+        #endregion
     }
 }
