@@ -119,25 +119,25 @@ namespace DiaryPlanner_Pro
             switch (type)
             {
                 case Type.Success:
-                    pictureBox1.Image = MORSE_CODE_APP.Properties.Resources.successLogo;
+                    pictureBox1.Image = DiaryPlanner_Pro.Properties.Resources.successLogo;
                     noticeLabel.Text = "SUCCESSFUL";
                     containerControl.FillColor = Color.FromArgb(94, 172, 36);
                     BackColor = Color.FromArgb(150, 201, 112);
                     break;
                 case Type.Error:
-                    pictureBox1.Image = MORSE_CODE_APP.Properties.Resources.errorLogo;
+                    pictureBox1.Image = DiaryPlanner_Pro.Properties.Resources.errorLogo;
                     noticeLabel.Text = "ERROR";
                     containerControl.FillColor = Color.FromArgb(146, 9, 45);
                     BackColor = Color.FromArgb(198, 35, 71);
                     break;
                 case Type.Info:
-                    pictureBox1.Image = MORSE_CODE_APP.Properties.Resources.informationLogo;
+                    pictureBox1.Image = DiaryPlanner_Pro.Properties.Resources.informationLogo;
                     noticeLabel.Text = "INFORMATION";
                     containerControl.FillColor = Color.FromArgb(47, 118, 236);
                     BackColor = Color.FromArgb(82, 171, 247);
                     break;
                 case Type.Warning:
-                    pictureBox1.Image = MORSE_CODE_APP.Properties.Resources.warningLogo;
+                    pictureBox1.Image = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                     noticeLabel.Text = "WARNING";
                     containerControl.FillColor = Color.FromArgb(254, 74, 69);
                     BackColor = Color.FromArgb(255, 91, 66);

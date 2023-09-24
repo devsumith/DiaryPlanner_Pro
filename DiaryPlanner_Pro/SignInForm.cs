@@ -204,7 +204,7 @@ namespace DiaryPlanner_Pro
                         userPictureBox.Image = selectedImage;
                     }
                     else
-                        MessageBox.Show("Select a Square Image", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        functions.Alert("Select a square image", AlertForm.Type.Info);
                 }
             }
             catch (Exception ex)
@@ -263,7 +263,7 @@ namespace DiaryPlanner_Pro
                         {
                             pictureWarning.Visible = true;
 
-                            MessageBox.Show("Select your Formal Picture", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            functions.Alert("Select your formal picture", AlertForm.Type.Error);
                             return false;
                         }
                         else
@@ -280,7 +280,7 @@ namespace DiaryPlanner_Pro
                         {
                             genderWarning.Visible = true;
 
-                            MessageBox.Show("Select your gender", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            functions.Alert("Select your gender", AlertForm.Type.Error);
                             return false;
                         }
                         else
@@ -299,7 +299,7 @@ namespace DiaryPlanner_Pro
                                 {
                                     birthdateWarning.Visible = true;
 
-                                    MessageBox.Show("Complete your birth date", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    functions.Alert("Complete your birth date", AlertForm.Type.Error);
                                     return false;
                                 }
 
@@ -320,7 +320,7 @@ namespace DiaryPlanner_Pro
                             textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                             textBox.Focus();
 
-                            MessageBox.Show($"Enter your password", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            functions.Alert("Enter your desired password", AlertForm.Type.Error);
                             return false;
                         }
                         else
@@ -331,7 +331,7 @@ namespace DiaryPlanner_Pro
                                 textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                                 textBox.Focus();
 
-                                MessageBox.Show($"Password must be 6 characters or above", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                functions.Alert("Minimum 6 characters", AlertForm.Type.Info);
                                 return false;
                             }
                             else
@@ -342,7 +342,7 @@ namespace DiaryPlanner_Pro
                                     textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                                     textBox.Focus();
 
-                                    MessageBox.Show($"Password must be moderate or strong", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    functions.Alert("Must be moderate or strong", AlertForm.Type.Info);
                                     return false;
                                 }
                                 else
@@ -357,7 +357,7 @@ namespace DiaryPlanner_Pro
                             textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                             textBox.Focus();
 
-                            MessageBox.Show($"Enter your password confirmation", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            functions.Alert("Enter the password confirmation", AlertForm.Type.Error);
                             return false;
                         }
                         else
@@ -368,7 +368,7 @@ namespace DiaryPlanner_Pro
                                 textBox.IconLeft = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                                 textBox.Focus();
 
-                                MessageBox.Show($"The password confirmation does not match", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                functions.Alert("Password does not match", AlertForm.Type.Error);
                                 return false;
                             }
                             else
@@ -387,7 +387,7 @@ namespace DiaryPlanner_Pro
                             textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                             textBox.Focus();
 
-                            MessageBox.Show($"Enter your {textBox.PlaceholderText}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            functions.Alert($"Enter your {textBox.PlaceholderText}", AlertForm.Type.Error);
                             return false;
                         }
                         else
@@ -417,7 +417,7 @@ namespace DiaryPlanner_Pro
                 textBox.IconRight = DiaryPlanner_Pro.Properties.Resources.warningLogo;
                 textBox.Focus();
 
-                MessageBox.Show($"Enter your valid {fieldName}", "Diary Planner Pro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                functions.Alert($"Enter your valid {fieldName}", AlertForm.Type.Error);
                 return false;
             }
             else
