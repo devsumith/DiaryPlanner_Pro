@@ -83,5 +83,76 @@ namespace DiaryPlanner_Pro
         }
 
         #endregion
+
+        #region FUNCTION TO SHOW THE ALERT NOTIFICATION
+
+        public void ShowAlert(string msg, Type type)
+        {
+            // Method to display an alert message with a specified type.
+
+            Opacity = 0.0;
+            StartPosition = FormStartPosition.Manual;
+            string fname;
+
+            // Loop to find an available form name.
+            for (int i = 1; i < 10; i++)
+            {
+                fname = "alert" + i.ToString();
+                AlertForm form = (AlertForm)Application.OpenForms[fname];
+
+                // If no form with the current name exists, use this name for the form.
+                if (form == null)
+                {
+                    Name = fname;
+                    x = Screen.PrimaryScreen.WorkingArea.Width - Width + 15; // Calculate the X coordinate.
+                    y = Screen.PrimaryScreen.WorkingArea.Height - Height * i - 5 * i; // Calculate the Y coordinate.
+                    Location = new Point(this.x, this.y); // Set the form's location.
+
+                    break;
+                }
+
+            }
+
+            x = Screen.PrimaryScreen.WorkingArea.Width - base.Width - 5; // Calculate the X coordinate for the form.
+
+            // Set the form's appearance based on the specified alert type.
+            switch (type)
+            {
+                case Type.Success:
+                    pictureBox1.Image = MORSE_CODE_APP.Properties.Resources.successLogo;
+                    noticeLabel.Text = "SUCCESSFUL";
+                    containerControl.FillColor = Color.FromArgb(94, 172, 36);
+                    BackColor = Color.FromArgb(150, 201, 112);
+                    break;
+                case Type.Error:
+                    pictureBox1.Image = MORSE_CODE_APP.Properties.Resources.errorLogo;
+                    noticeLabel.Text = "ERROR";
+                    containerControl.FillColor = Color.FromArgb(146, 9, 45);
+                    BackColor = Color.FromArgb(198, 35, 71);
+                    break;
+                case Type.Info:
+                    pictureBox1.Image = MORSE_CODE_APP.Properties.Resources.informationLogo;
+                    noticeLabel.Text = "INFORMATION";
+                    containerControl.FillColor = Color.FromArgb(47, 118, 236);
+                    BackColor = Color.FromArgb(82, 171, 247);
+                    break;
+                case Type.Warning:
+                    pictureBox1.Image = MORSE_CODE_APP.Properties.Resources.warningLogo;
+                    noticeLabel.Text = "WARNING";
+                    containerControl.FillColor = Color.FromArgb(254, 74, 69);
+                    BackColor = Color.FromArgb(255, 91, 66);
+                    break;
+            }
+
+
+            labelMessage.Text = msg; // Set the alert message.
+
+            Show();
+            action = Action.start; // Set the action to "start" for opening animation.
+            timer.Interval = 1;
+            timer.Start();
+        }
+
+        #endregion
     }
 }
