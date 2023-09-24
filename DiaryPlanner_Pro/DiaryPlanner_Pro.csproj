@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertForm.Designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functionality.cs" />
     <Compile Include="LoadingScreenForm.cs">
       <SubType>Form</SubType>
