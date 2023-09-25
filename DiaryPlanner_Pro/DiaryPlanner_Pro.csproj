@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>calendar.ico</ApplicationIcon>
+    <ApplicationIcon>calendar %281%29.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
@@ -135,6 +135,7 @@
     <None Include="Resources\eye.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="calendar %281%29.ico" />
     <Content Include="calendar.ico" />
     <None Include="Resources\warningLogo.png" />
     <None Include="Resources\successLogo.png" />
