@@ -1040,6 +1040,7 @@
             this.ClientSize = new System.Drawing.Size(855, 551);
             this.Controls.Add(this.loginFormPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(855, 551);
             this.MinimumSize = new System.Drawing.Size(855, 551);
             this.Name = "SignInForm";
