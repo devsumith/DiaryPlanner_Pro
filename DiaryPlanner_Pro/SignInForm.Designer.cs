@@ -136,6 +136,8 @@
             this.userPanel.Name = "userPanel";
             this.userPanel.Size = new System.Drawing.Size(839, 536);
             this.userPanel.TabIndex = 0;
+            this.userPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseDown);
+            this.userPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseMove);
             // 
             // pictureWarning
             // 
@@ -1032,6 +1034,8 @@
             this.loginFormPanel.Name = "loginFormPanel";
             this.loginFormPanel.Size = new System.Drawing.Size(855, 551);
             this.loginFormPanel.TabIndex = 0;
+            this.loginFormPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseDown);
+            this.loginFormPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseMove);
             // 
             // SignInForm
             // 
