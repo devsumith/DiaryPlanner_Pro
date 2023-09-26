@@ -222,7 +222,10 @@ namespace DiaryPlanner_Pro
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
-            ValidateInformation();
+            if (ValidateInformation())
+            {
+
+            }
         }
 
         #region FUNCTION FOR INFORMATION'S VALIDATION
@@ -402,6 +405,20 @@ namespace DiaryPlanner_Pro
 
             return true;
         }
+
+        #region FUNCTION FOR STORING THE REMAINING INFORMATION TO THE CLASS.
+
+        private void PassingInformation()
+        {
+            userPersonalData.LastName = lastNameBox.Text;
+            userPersonalData.FirstName = firstNameBox.Text;
+            userPersonalData.MiddleName = middleNameBox.Text;
+            userPersonalData.ExtensionName = extensionNameCBox.Text;
+            userPersonalData.BirthDate = $"{monthBox} {dayBox}, {yearBox}";
+            userPersonalData.Username = usernameBox.Text;
+        }
+
+        #endregion
 
         #endregion
 
