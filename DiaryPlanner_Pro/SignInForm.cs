@@ -224,7 +224,10 @@ namespace DiaryPlanner_Pro
         {
             if (ValidateInformation())
             {
-
+                MessageBox.Show($"{userPersonalData.LastName}, {userPersonalData.FirstName} {userPersonalData.MiddleName}");
+                MessageBox.Show($"{userPersonalData.Gender} {userPersonalData.BirthDate}");
+                MessageBox.Show($"{userPersonalData.GmailAddress} {userPersonalData.ContactNumber} ");
+                MessageBox.Show($"{userPersonalData.Username} {userPersonalData.Password}");
             }
         }
 
@@ -403,6 +406,8 @@ namespace DiaryPlanner_Pro
                     return false;
             }
 
+            // TO PASS THE REMAINING INFORMATION
+            PassingInformation();
             return true;
         }
 
@@ -414,7 +419,7 @@ namespace DiaryPlanner_Pro
             userPersonalData.FirstName = firstNameBox.Text;
             userPersonalData.MiddleName = middleNameBox.Text;
             userPersonalData.ExtensionName = extensionNameCBox.Text;
-            userPersonalData.BirthDate = $"{monthBox} {dayBox}, {yearBox}";
+            userPersonalData.BirthDate = $"{monthBox.Text} {dayBox.Text}, {yearBox.Text}";
             userPersonalData.Username = usernameBox.Text;
         }
 

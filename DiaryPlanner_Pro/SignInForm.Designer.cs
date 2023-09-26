@@ -798,14 +798,14 @@
             this.extensionNameCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.extensionNameCBox.FocusedColor = System.Drawing.Color.Silver;
             this.extensionNameCBox.FocusedState.BorderColor = System.Drawing.Color.Silver;
-            this.extensionNameCBox.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extensionNameCBox.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
             this.extensionNameCBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.extensionNameCBox.HoverState.BorderColor = System.Drawing.Color.DimGray;
             this.extensionNameCBox.ItemHeight = 30;
             this.extensionNameCBox.Items.AddRange(new object[] {
             "N/A",
-            "Junior",
-            "Senior"});
+            "Jr.",
+            "Sr."});
             this.extensionNameCBox.Location = new System.Drawing.Point(238, 279);
             this.extensionNameCBox.MaxDropDownItems = 4;
             this.extensionNameCBox.Name = "extensionNameCBox";
