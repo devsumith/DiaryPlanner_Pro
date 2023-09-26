@@ -61,6 +61,7 @@
     <Compile Include="AlertForm.Designer.cs">
       <DependentUpon>AlertForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBAccess.cs" />
     <Compile Include="Functionality.cs" />
     <Compile Include="LoadingScreenForm.cs">
       <SubType>Form</SubType>
