@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -461,6 +462,43 @@ namespace DiaryPlanner_Pro
         }
 
         #endregion
+
+        #endregion
+
+        #region FUNCTION TO ACCESS THE DATABASE AND STORE THE USER'S INFORMATION
+
+        private void DatabaseAccessAsync()
+        {
+            DBAccess objDBAccess = new DBAccess(); // Create an instance of the DBAccess class for database operations.
+
+            SqlCommand insertCommand = new SqlCommand("INSERT INTO UserPersonalData (Image, LastName, FirstName, ExtensionName, Gender, BirthDate, GmailAddress, ContactNumber, UserName, Password) VALUES (@Image, @LastName, @FirstName, @ExtensionName, @Gender, @BirthDate, @GmailAddress, @ContactNumber, @UserName, @Password");
+
+            // Add parameters to the insert command with values from UserPersonalData.
+            // Parameters are placeholders for data that will be inserted into the database.
+            insertCommand.Parameters.AddWithValue("@UserPhoto", functions.getPhoto(userPersonalData.Image));
+            insertCommand.Parameters.AddWithValue("@LastName", userPersonalData.LastName);
+            insertCommand.Parameters.AddWithValue("@FirstName", userPersonalData.FirstName);
+            insertCommand.Parameters.AddWithValue("@MiddleName", userPersonalData.MiddleName);
+            insertCommand.Parameters.AddWithValue("@ExtensionName", userPersonalData.ExtensionName);
+            insertCommand.Parameters.AddWithValue("@Gender", userPersonalData.Gender);
+            insertCommand.Parameters.AddWithValue("@BirthDate", userPersonalData.BirthDate);
+            insertCommand.Parameters.AddWithValue("@GmailAddress", userPersonalData.GmailAddress);
+            insertCommand.Parameters.AddWithValue("@ContactNumber", userPersonalData.ContactNumber);
+            insertCommand.Parameters.AddWithValue("@UserName", userPersonalData.Username);
+            insertCommand.Parameters.AddWithValue("@Password", userPersonalData.Password);
+
+            // Execute the insert command to insert data into the database.
+            int row = objDBAccess.executeQuery(insertCommand);
+
+            if (row == 1)
+            {
+                // If the insertion was successful, display a success message.
+                functions.Alert("Finalized Successfully", AlertForm.Type.Success);
+                objDBAccess.closeConn(); // Close the database connection.
+            }
+            else // If the insertion failed, display an error message and enable the finalizeAllBtn.
+                functions.Alert("Error Occured. Try Again!", AlertForm.Type.Error);
+        }
 
         #endregion
 
