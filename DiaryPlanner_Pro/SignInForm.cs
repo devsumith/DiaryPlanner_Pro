@@ -224,10 +224,7 @@ namespace DiaryPlanner_Pro
         {
             if (ValidateInformation())
             {
-                MessageBox.Show($"{userPersonalData.LastName}, {userPersonalData.FirstName} {userPersonalData.MiddleName}");
-                MessageBox.Show($"{userPersonalData.Gender} {userPersonalData.BirthDate}");
-                MessageBox.Show($"{userPersonalData.GmailAddress} {userPersonalData.ContactNumber} ");
-                MessageBox.Show($"{userPersonalData.Username} {userPersonalData.Password}");
+  
             }
         }
 

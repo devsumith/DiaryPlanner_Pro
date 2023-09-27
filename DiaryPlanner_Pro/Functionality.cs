@@ -42,5 +42,22 @@ namespace DiaryPlanner_Pro
         }
 
         #endregion
+
+        #region FUNCTION TO CONVERT THE IMAGE INTO BYTE ARRAY
+
+        // This method retrieves the byte array representation of a student's image.
+        public byte[] getPhoto(Image studentImage)
+        {
+            // Create a new memory stream to store the image data.
+            MemoryStream stream = new MemoryStream();
+
+            // Save the student's image to the memory stream using the original image format.
+            studentImage.Save(stream, studentImage.RawFormat);
+
+            // Get the byte array representation of the image data from the memory stream.
+            return stream.GetBuffer();
+        }
+
+        #endregion
     }
 }
