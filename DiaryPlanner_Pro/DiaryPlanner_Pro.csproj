@@ -62,6 +62,12 @@
       <DependentUpon>AlertForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="FlashingScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlashingScreenForm.Designer.cs">
+      <DependentUpon>FlashingScreenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functionality.cs" />
     <Compile Include="LoadingScreenForm.cs">
       <SubType>Form</SubType>
@@ -86,6 +92,9 @@
     <Compile Include="UserPersonalData.cs" />
     <EmbeddedResource Include="AlertForm.resx">
       <DependentUpon>AlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlashingScreenForm.resx">
+      <DependentUpon>FlashingScreenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoadingScreenForm.resx">
       <DependentUpon>LoadingScreenForm.cs</DependentUpon>

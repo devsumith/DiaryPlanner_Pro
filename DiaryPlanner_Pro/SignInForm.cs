@@ -225,7 +225,7 @@ namespace DiaryPlanner_Pro
         {
             if (ValidateInformation())
             {
-  
+                
             }
         }
 
