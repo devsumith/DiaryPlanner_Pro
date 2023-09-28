@@ -26,7 +26,7 @@ namespace DiaryPlanner_Pro
         private void timer_Tick(object sender, EventArgs e)
         {
             // Close the form when the timer ticks (after 10 seconds)
-            Close();
+            //Close();
         }
     }
 }

@@ -221,11 +221,23 @@ namespace DiaryPlanner_Pro
 
         #region FUNCTION FOR VALIDATING THE INFORMATION BEFORE THE APPROVAL OF SUBMISSION
 
-        private void submitBtn_Click(object sender, EventArgs e)
+        private async void submitBtn_Click(object sender, EventArgs e)
         {
             if (ValidateInformation())
             {
-                
+                functions.Alert("Finalizing...", AlertForm.Type.Info);
+
+                // Start the loading screen asynchronously.
+                var flashingScreenForm = new FlashingScreenForm();
+                flashingScreenForm.Show();
+
+                // Await the database access operation.
+                await Task.Run(() => DatabaseAccess());
+
+                // Close the loading screen.
+                flashingScreenForm.Close();
+
+                functions.Alert("Finalized Successfully", AlertForm.Type.Success);
             }
         }
 
@@ -467,15 +479,15 @@ namespace DiaryPlanner_Pro
 
         #region FUNCTION TO ACCESS THE DATABASE AND STORE THE USER'S INFORMATION
 
-        private void DatabaseAccessAsync()
+        private void DatabaseAccess()
         {
             DBAccess objDBAccess = new DBAccess(); // Create an instance of the DBAccess class for database operations.
 
-            SqlCommand insertCommand = new SqlCommand("INSERT INTO UserPersonalData (Image, LastName, FirstName, ExtensionName, Gender, BirthDate, GmailAddress, ContactNumber, UserName, Password) VALUES (@Image, @LastName, @FirstName, @ExtensionName, @Gender, @BirthDate, @GmailAddress, @ContactNumber, @UserName, @Password");
+            SqlCommand insertCommand = new SqlCommand("INSERT INTO UserPersonalData (Image, LastName, FirstName, MiddleName, ExtensionName, Gender, BirthDate, GmailAddress, ContactNumber, UserName, Password) VALUES (@Image, @LastName, @FirstName, @MiddleName, @ExtensionName, @Gender, @BirthDate, @GmailAddress, @ContactNumber, @UserName, @Password)");
 
             // Add parameters to the insert command with values from UserPersonalData.
             // Parameters are placeholders for data that will be inserted into the database.
-            insertCommand.Parameters.AddWithValue("@UserPhoto", functions.getPhoto(userPersonalData.Image));
+            insertCommand.Parameters.AddWithValue("@Image", functions.getPhoto(userPersonalData.Image));
             insertCommand.Parameters.AddWithValue("@LastName", userPersonalData.LastName);
             insertCommand.Parameters.AddWithValue("@FirstName", userPersonalData.FirstName);
             insertCommand.Parameters.AddWithValue("@MiddleName", userPersonalData.MiddleName);
