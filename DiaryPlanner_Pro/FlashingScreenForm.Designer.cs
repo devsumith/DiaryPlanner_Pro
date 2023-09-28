@@ -48,6 +48,7 @@
             // timer
             // 
             this.timer.Interval = 500;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // guna2Elipse1
             // 
@@ -69,6 +70,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FlashingScreenForm";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.FlashingScreenForm_Load);
             this.ResumeLayout(false);
 
         }
