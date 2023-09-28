@@ -16,5 +16,17 @@ namespace DiaryPlanner_Pro
         {
             InitializeComponent();
         }
+
+        private void FlashingScreenForm_Load(object sender, EventArgs e)
+        {
+            // Start the timer when the form loads
+            timer.Start();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            // Close the form when the timer ticks (after 10 seconds)
+            Close();
+        }
     }
 }
