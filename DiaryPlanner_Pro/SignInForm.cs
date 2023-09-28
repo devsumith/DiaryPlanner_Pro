@@ -221,23 +221,18 @@ namespace DiaryPlanner_Pro
 
         #region FUNCTION FOR VALIDATING THE INFORMATION BEFORE THE APPROVAL OF SUBMISSION
 
-        private async void submitBtn_Click(object sender, EventArgs e)
+        private void submitBtn_Click(object sender, EventArgs e)
         {
             if (ValidateInformation())
             {
                 functions.Alert("Finalizing...", AlertForm.Type.Info);
 
-                // Start the loading screen asynchronously.
+                // Start the loading screen.
                 var flashingScreenForm = new FlashingScreenForm();
-                flashingScreenForm.Show();
+                flashingScreenForm.ShowDialog ();
 
-                // Await the database access operation.
-                await Task.Run(() => DatabaseAccess());
-
-                // Close the loading screen.
-                flashingScreenForm.Close();
-
-                functions.Alert("Finalized Successfully", AlertForm.Type.Success);
+                // Database access operation.
+                DatabaseAccess();
             }
         }
 
@@ -506,6 +501,9 @@ namespace DiaryPlanner_Pro
             {
                 // If the insertion was successful, display a success message.
                 functions.Alert("Finalized Successfully", AlertForm.Type.Success);
+                DiaryPlanner_Pro.Properties.Settings.Default.IfRegistered = true;
+                DiaryPlanner_Pro.Properties.Settings.Default.Save();
+
                 objDBAccess.closeConn(); // Close the database connection.
             }
             else // If the insertion failed, display an error message and enable the finalizeAllBtn.
