@@ -31,13 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.userPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.userPanel.SuspendLayout();
             this.loginFormPanel.SuspendLayout();
+            this.guna2TabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -52,6 +57,7 @@
             this.userPanel.BackColor = System.Drawing.Color.Transparent;
             this.userPanel.BorderColor = System.Drawing.Color.Black;
             this.userPanel.BorderRadius = 10;
+            this.userPanel.Controls.Add(this.guna2TabControl1);
             this.userPanel.Controls.Add(this.guna2ControlBox3);
             this.userPanel.Controls.Add(this.panel1);
             this.userPanel.Controls.Add(this.guna2ControlBox2);
@@ -62,9 +68,33 @@
             this.userPanel.Size = new System.Drawing.Size(839, 536);
             this.userPanel.TabIndex = 0;
             // 
+            // guna2ControlBox3
+            // 
+            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.Animated = true;
+            this.guna2ControlBox3.BorderRadius = 10;
+            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.White;
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(712, 6);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.Size = new System.Drawing.Size(38, 25);
+            this.guna2ControlBox3.TabIndex = 15;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Location = new System.Drawing.Point(0, 37);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(839, 1);
+            this.panel1.TabIndex = 12;
+            // 
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
             this.guna2ControlBox2.BorderRadius = 10;
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
@@ -77,6 +107,7 @@
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.BorderRadius = 10;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
@@ -98,27 +129,57 @@
             this.loginFormPanel.Size = new System.Drawing.Size(855, 551);
             this.loginFormPanel.TabIndex = 0;
             // 
-            // panel1
+            // guna2TabControl1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.guna2TabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Location = new System.Drawing.Point(0, 37);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(839, 1);
-            this.panel1.TabIndex = 12;
+            this.guna2TabControl1.Controls.Add(this.tabPage1);
+            this.guna2TabControl1.Controls.Add(this.tabPage2);
+            this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
+            this.guna2TabControl1.Location = new System.Drawing.Point(0, 40);
+            this.guna2TabControl1.Name = "guna2TabControl1";
+            this.guna2TabControl1.SelectedIndex = 0;
+            this.guna2TabControl1.Size = new System.Drawing.Size(839, 496);
+            this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.guna2TabControl1.TabIndex = 16;
+            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             // 
-            // guna2ControlBox3
+            // tabPage1
             // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.BorderRadius = 10;
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(712, 6);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(38, 25);
-            this.guna2ControlBox3.TabIndex = 15;
+            this.tabPage1.Location = new System.Drawing.Point(184, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(651, 488);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Home";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(184, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(651, 488);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Diary";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -133,6 +194,7 @@
             this.Text = "Diary Planner Pro";
             this.userPanel.ResumeLayout(false);
             this.loginFormPanel.ResumeLayout(false);
+            this.guna2TabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -145,5 +207,9 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private System.Windows.Forms.Timer timer;
+        private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
