@@ -76,22 +76,22 @@
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.LightGray;
+            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.Purple;
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.DimGray;
+            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.Orchid;
             this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.LavenderBlush;
+            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.Indigo;
             this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.Thistle;
+            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.BlueViolet;
             this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.Gray;
+            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.DarkMagenta;
             this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.MediumOrchid;
             this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.LavenderBlush;
+            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.Indigo;
             // 
             // tabPage1
             // 
