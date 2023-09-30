@@ -120,6 +120,385 @@
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>855, 551</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="userPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="guna2TabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="guna2TabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>651, 488</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>651, 488</value>
+  </data>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Diary</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 4</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>651, 488</value>
+  </data>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="imageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 17</value>
+  </metadata>
+  <data name="imageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADY
+        EAAAAk1TRnQBSQFMAgEBBAEAARABAAEQAQABGQEAARkBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABZAMAATIDAAEBAQABCAUAAYgBExgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
+        AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
+        AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
+        AwABZgMAAZkDAAHMAgABMwMAAjMCAAEzAWYCAAEzAZkCAAEzAcwCAAEzAf8CAAFmAwABZgEzAgACZgIA
+        AWYBmQIAAWYBzAIAAWYB/wIAAZkDAAGZATMCAAGZAWYCAAKZAgABmQHMAgABmQH/AgABzAMAAcwBMwIA
+        AcwBZgIAAcwBmQIAAswCAAHMAf8CAAH/AWYCAAH/AZkCAAH/AcwBAAEzAf8CAAH/AQABMwEAATMBAAFm
+        AQABMwEAAZkBAAEzAQABzAEAATMBAAH/AQAB/wEzAgADMwEAAjMBZgEAAjMBmQEAAjMBzAEAAjMB/wEA
+        ATMBZgIAATMBZgEzAQABMwJmAQABMwFmAZkBAAEzAWYBzAEAATMBZgH/AQABMwGZAgABMwGZATMBAAEz
+        AZkBZgEAATMCmQEAATMBmQHMAQABMwGZAf8BAAEzAcwCAAEzAcwBMwEAATMBzAFmAQABMwHMAZkBAAEz
+        AswBAAEzAcwB/wEAATMB/wEzAQABMwH/AWYBAAEzAf8BmQEAATMB/wHMAQABMwL/AQABZgMAAWYBAAEz
+        AQABZgEAAWYBAAFmAQABmQEAAWYBAAHMAQABZgEAAf8BAAFmATMCAAFmAjMBAAFmATMBZgEAAWYBMwGZ
+        AQABZgEzAcwBAAFmATMB/wEAAmYCAAJmATMBAANmAQACZgGZAQACZgHMAQABZgGZAgABZgGZATMBAAFm
+        AZkBZgEAAWYCmQEAAWYBmQHMAQABZgGZAf8BAAFmAcwCAAFmAcwBMwEAAWYBzAGZAQABZgLMAQABZgHM
+        Af8BAAFmAf8CAAFmAf8BMwEAAWYB/wGZAQABZgH/AcwBAAHMAQAB/wEAAf8BAAHMAQACmQIAAZkBMwGZ
+        AQABmQEAAZkBAAGZAQABzAEAAZkDAAGZAjMBAAGZAQABZgEAAZkBMwHMAQABmQEAAf8BAAGZAWYCAAGZ
+        AWYBMwEAAZkBMwFmAQABmQFmAZkBAAGZAWYBzAEAAZkBMwH/AQACmQEzAQACmQFmAQADmQEAApkBzAEA
+        ApkB/wEAAZkBzAIAAZkBzAEzAQABZgHMAWYBAAGZAcwBmQEAAZkCzAEAAZkBzAH/AQABmQH/AgABmQH/
+        ATMBAAGZAcwBZgEAAZkB/wGZAQABmQH/AcwBAAGZAv8BAAHMAwABmQEAATMBAAHMAQABZgEAAcwBAAGZ
+        AQABzAEAAcwBAAGZATMCAAHMAjMBAAHMATMBZgEAAcwBMwGZAQABzAEzAcwBAAHMATMB/wEAAcwBZgIA
+        AcwBZgEzAQABmQJmAQABzAFmAZkBAAHMAWYBzAEAAZkBZgH/AQABzAGZAgABzAGZATMBAAHMAZkBZgEA
+        AcwCmQEAAcwBmQHMAQABzAGZAf8BAALMAgACzAEzAQACzAFmAQACzAGZAQADzAEAAswB/wEAAcwB/wIA
+        AcwB/wEzAQABmQH/AWYBAAHMAf8BmQEAAcwB/wHMAQABzAL/AQABzAEAATMBAAH/AQABZgEAAf8BAAGZ
+        AQABzAEzAgAB/wIzAQAB/wEzAWYBAAH/ATMBmQEAAf8BMwHMAQAB/wEzAf8BAAH/AWYCAAH/AWYBMwEA
+        AcwCZgEAAf8BZgGZAQAB/wFmAcwBAAHMAWYB/wEAAf8BmQIAAf8BmQEzAQAB/wGZAWYBAAH/ApkBAAH/
+        AZkBzAEAAf8BmQH/AQAB/wHMAgAB/wHMATMBAAH/AcwBZgEAAf8BzAGZAQAB/wLMAQAB/wHMAf8BAAL/
+        ATMBAAHMAf8BZgEAAv8BmQEAAv8BzAEAAmYB/wEAAWYB/wFmAQABZgL/AQAB/wJmAQAB/wFmAf8BAAL/
+        AWYBAAEhAQABpQEAA18BAAN3AQADhgEAA5YBAAPLAQADsgEAA9cBAAPdAQAD4wEAA+oBAAPxAQAD+AEA
+        AfAB+wH/AQABpAKgAQADgAMAAf8CAAH/AwAC/wEAAf8DAAH/AQAB/wEAAv8CAAP//wD/AP8A/wD/AP8A
+        /wD/AP8A2gAB/wH0Ae8B6wERAQABDwHqAe8B8wH0BgAB9AHzBPIB9AMAAfQE8gHzAfQB/woAAvQB8AGS
+        ARIB/wLtAQcC9AkAAf8B8QHtARENAAEQAewB8AH0DQAB/wHwAeoHAAEUAQcB9AQAAfQB7AFDBA4B8AMA
+        Af8EDgEQAesB8wgAAfQB8gHtAeoBEAEAAQ4B/wHqAQABDgETAewB8QH0BwAB8gETEQABEQHxAgAB8gfs
+        AZIB9AEAAfMBQwkAARABBwH0AwAB8AEOBQABvAMAAf8GAAHvBwAB8AFtARAEAAEOAf8B6gQAAQ8BEwEH
+        Af8EAAH0Ae0TAAESAfQBAAEPBwAB7wEAAf8BbQsAARQB8wMAAe8GAAG8AwAB/wYAAe0HAAEPBgABDgH/
+        AeoGAAEOAfQEAAH0AW0TAAEQAfMIAAEOAfMBAAG8DQAB7wMAAe8GAAG8AwAB/wYAAe0HAAFtARAFAAEO
+        Af8B6gUAAQ4BEgH/BAAB9AHqEwABEAHzCAABFAL0AesNAAHqAwAB7wYAAbwDAAH/BgAB7QcAAfQBvAER
+        BAABDgH/AeoFAAHvAfMB/wQAAfQBbRMAARAB8wgAAewBAAH0AUMFAAHrAfMB/wH0AfIBDwIAAQ8DAAHv
+        BgABvAMAAf8GAAHtBQAB8wHtAZIB/wHrBAABDgH/AeoEAAFDAf8BBwHsAfIDAAH0AW0TAAEQAfQIAAHt
+        AQAB8wERBAABDgEHAwAB/wFtBgAB7wYAARME6gYAAe0EAAH0AW0BAAEPAfMB9wQAAQ4B/wHqBAABbQH0
+        AeoBAAEQAfMCAAH/AewTAAESAfQIAAHsAQAB9AEVBAABDgEHAQAB/wEHAZIBDwIAAREDAAHvEQAB7QQA
+        AfQB6wEAAQ8B8wH3BAABDgH/AeoEAAHqAfQB6gEAAREB8wMAAbwBDhIAAe8JAAERAfQB/wHtBAABDgEH
+        AQAB/wIOAwAB6wMAAbwRAAH3BAAB/wHxAewB7QH/AesEAAEOAf8B6gQAAUMB9AHvAewBvAH/AwAB8wEQ
+        EQABDgH0CgAB8gEAAfIEAAEOAQcBAAH/BQAB7wP/AfQB7Q8AAW0B9AP/BAAB/wHyAUMEAAEQAf8BbQEO
+        BAABBwL/BgAB7wYABQ4GAAHtCwABkgH/AfQB7AMAAQ4B7wH0AfEEAAHqAfQB7wFtAfcC9AHsAQ4MAAFt
+        AfIB9AEHAesBkgQAAewBEAIAAQ8BEwH3AfIB/wHyAe8BEgERAgABDgHrAf8GAAH0AewBDwIAAQ4BEgEH
+        A/MBvAHqAQ8CAAEOAesB8wsAAUMB8gEAAfMBbQMAARAB6gEUAwABQwHwAf8BEQEAAQ8B7QH0AfMB7AsA
+        AW0B8gH0Ae8BEAEAAQ8EAAEPAQABFAHtAQcC8wEHAesB7wHzAfQB8AGSAeoCDgH0BwAB9AG8AewB6wHv
+        AfMB9ALyAfMC9AEHAuwB7wHzAf8MAAHsAfQB/wHzAewHAAFtAfMB/wEAAbwCAAEOAe0C9AHtCQAB6wL0
+        Ae8BDwIAAe0EAAK8AfQB/wHzAe0BEAEOAQACDgHrAfEB9AH/AfEBBwH/CAAD/wH0AQcBEQMOAUMB8AH0
+        A/8OAAEOAZIB9AEAAfQB8gHtARUBEQFDAesBvAT/AQAB7wEOAQABDgHtAvQB7QEOBgABbQHzAfQBBwEQ
+        AgAB7AH0BgAB9AHtAQ4CAAEPARABDwEOAgAB6wH0DQAB9AHtAQ4FAAEOAe0B9BEAAQ4B7AHyAf8BAAH/
+        AfQB8wL0AgAB8gEHAfQBAAH/Ae8BDgEAAQ8B7QH0AfMB7AEOBAABbQHyAfQBBwERAgAB7AH0CAAB8wHt
+        AeoB7AHwAfEB8AHtAeoB7AHyDQAB9AHtCAABDwHvEwABQwGSAfIB9AMAAfQB8wHvAUMBbQH0AgAB/wHv
+        AgABDgHtAfQB8wHtAwAB6wHzAfQB7wEPAgAB7QH0CgAD9AHwAQcBvAH/AvQB/w0AAfEBDgkAAUMB9BUA
+        AREB7AHtAewBFAEOAgAB6gH0BAAB7wMAAe0C9AHtAQABbQL0AQcBDwIAAeoB/wsAAf8B8wEUAwABDwHx
+        Af8OAAHvCwAB8h0AAeoB9AQAAf8B7wEOAQABDgHtAvQB8AHzAfQBBwERAwAB6gH/CwAB8wESBQABEAHx
+        Af8NAAHtCwABBx0AAeoB9AUAAf8B7wIAAQ8B7QH0AQAB9AHvARAEAAHqAf8LAAEHAQ4GAAHsAfQNAAGS
+        CwAB8B0AAeoB9AYAAf8B7wIAAQ4B7QH/Ae8BDwIAAewCAAHqAf8LAAHvBwAB6wH0DQABBwsAAfMGAAEV
+        Aw4CAA0OAgACDgHrAfQIAAHvAQ4CAAERAQ4CAAHsAfQCAAHqAf8LAAHvBwAB6wH0DQAB8wEQCQAB6gcA
+        AfMCBwHtAgAB7QwHAgAB7AEHAfIB/wgAAf8B7wEOBAAB7AL0AewBFAH3Af8LAAHxAREFAAEOAe8B/w4A
+        AQcBDwcAAREB8AoAAfMCAAHxCwAB/wEOAQAB8AwAAf8BBwFtAREBEgH3AfQCAAH0AfMB9AH/CwAB9AH3
+        AQ4EAAHsAfMPAAH0Ae8BEQUAAREBvAH/CgAB/wHrARIB8wsAAf8B7AESAfMlAAH0AfEB6gEOARQBvAH/
+        EgAB8wGSARABDgEVAe8B/wkAAUIBTQE+BwABPgMAASgDAAFkAwABMgMAAQEBAAEBBQABIAEDFgAD//8A
+        kgAB/wHwAQEB+AEOAQEB/wGAAQ8B+AIAATADAAH/AeABAAHwAQ4BAQH+AQABAwH4AgABMAQAASABAAFw
+        AQ4BAQH8AgAB8AIAARAEAAFAAQABcAEOAQEB/AIAAfACAAEQBAABQAEAAXABDgEBAfwCAAHwAgABEAYA
+        AXABDgEBAfwCAAHwAgABEAQAAYABAAFwAQ4BAQHwAgABcAIAARAEAAGAAnABAAEBAeACAAEwAgABEAQA
+        AYABQAFwAQABAQHgAgABOAIAATAFAAFAAXABAAEBAeACAAE4AgABMAQAAkADAAE8AgAB/AIAAXAJAAE8
+        AgAB/AIAAXAEAAEgBAABPAIAAf4CAAFwBgABgAIAATwCAAH/AQABAQHwBAABCAEAAUACAAE/AQABBwH/
+        AcABBwHwBAABAgEMAUACAAF/AYABDwH/AYABBwHwBQAB4AFgAgAB/wHAAQ8B/wGAAQMB8AYAAXgBAAEB
+        Af8BwAEfAf8BgAEDAfAGAAF4AQABAQH/AcABDwH/AYABAwHwBgABfAEEAQEB/wHAAQ8B/wGAAQMB8AYA
+        AX4BAAEBAf8BwAEPAf8BgAEDAfAGAAF/AYABAQH/AcABDwH/AYABBwHwBgABfwGAAQEB/wHAAQ8B/wHA
+        AQcB8AMAAeEB/wHDAf8BwAFhAf8BwAEfAf8BwAEHAfADAAHhAf8BwwT/AeABPwH/AfABHwHwAwAL
+</value>
+  </data>
+  <data name="guna2TabControl1.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>180, 40</value>
+  </data>
+  <data name="guna2TabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="guna2TabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>839, 496</value>
+  </data>
+  <data name="guna2TabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.Name" xml:space="preserve">
+    <value>guna2TabControl1</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TabControl, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;guna2TabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="guna2ControlBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="guna2ControlBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>712, 6</value>
+  </data>
+  <data name="guna2ControlBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 25</value>
+  </data>
+  <data name="guna2ControlBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox3.Name" xml:space="preserve">
+    <value>guna2ControlBox3</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox3.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox3.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 37</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>839, 1</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="guna2ControlBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="guna2ControlBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>754, 6</value>
+  </data>
+  <data name="guna2ControlBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 25</value>
+  </data>
+  <data name="guna2ControlBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox2.Name" xml:space="preserve">
+    <value>guna2ControlBox2</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox2.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="guna2ControlBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="guna2ControlBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>794, 6</value>
+  </data>
+  <data name="guna2ControlBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 25</value>
+  </data>
+  <data name="guna2ControlBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox1.Name" xml:space="preserve">
+    <value>guna2ControlBox1</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox1.Parent" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;guna2ControlBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="userPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 7</value>
+  </data>
+  <data name="userPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>839, 536</value>
+  </data>
+  <data name="userPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;userPanel.Name" xml:space="preserve">
+    <value>userPanel</value>
+  </data>
+  <data name="&gt;&gt;userPanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;userPanel.Parent" xml:space="preserve">
+    <value>loginFormPanel</value>
+  </data>
+  <data name="&gt;&gt;userPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="loginFormPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="loginFormPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="loginFormPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>855, 551</value>
+  </data>
+  <data name="loginFormPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loginFormPanel.Name" xml:space="preserve">
+    <value>loginFormPanel</value>
+  </data>
+  <data name="&gt;&gt;loginFormPanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomGradientPanel, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;loginFormPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;loginFormPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>855, 551</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Diary Planner Pro</value>
+  </data>
+  <data name="&gt;&gt;guna2Elipse1.Name" xml:space="preserve">
+    <value>guna2Elipse1</value>
+  </data>
+  <data name="&gt;&gt;guna2Elipse1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Elipse, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;imageList.Name" xml:space="preserve">
+    <value>imageList</value>
+  </data>
+  <data name="&gt;&gt;imageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer.Name" xml:space="preserve">
+    <value>timer</value>
+  </data>
+  <data name="&gt;&gt;timer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>141, 17</value>
   </metadata>
