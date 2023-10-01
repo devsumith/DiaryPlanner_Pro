@@ -56,6 +56,9 @@
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.selectPictureBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.timeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timerTick = new System.Windows.Forms.Timer(this.components);
             this.userPanel.SuspendLayout();
             this.sidePanel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -275,6 +278,8 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Indigo;
+            this.guna2Panel2.Controls.Add(this.dateLabel);
+            this.guna2Panel2.Controls.Add(this.timeLabel);
             this.guna2Panel2.Controls.Add(this.selectPictureBtn);
             resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
             this.guna2Panel2.Name = "guna2Panel2";
@@ -294,6 +299,24 @@
             this.selectPictureBtn.ForeColor = System.Drawing.Color.White;
             this.selectPictureBtn.Name = "selectPictureBtn";
             // 
+            // timeLabel
+            // 
+            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.timeLabel, "timeLabel");
+            this.timeLabel.ForeColor = System.Drawing.Color.Thistle;
+            this.timeLabel.Name = "timeLabel";
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.dateLabel, "dateLabel");
+            this.dateLabel.ForeColor = System.Drawing.Color.Thistle;
+            this.dateLabel.Name = "dateLabel";
+            // 
+            // timerTick
+            // 
+            this.timerTick.Tick += new System.EventHandler(this.timerTick_Tick);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -310,6 +333,7 @@
             this.guna2TabControl1.ResumeLayout(false);
             this.loginFormPanel.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -341,5 +365,8 @@
         private System.Windows.Forms.TabPage tabPage8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2GradientButton selectPictureBtn;
+        private Guna.UI2.WinForms.Guna2HtmlLabel timeLabel;
+        private Guna.UI2.WinForms.Guna2HtmlLabel dateLabel;
+        private System.Windows.Forms.Timer timerTick;
     }
 }

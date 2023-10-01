@@ -16,5 +16,9 @@ namespace DiaryPlanner_Pro
         {
             InitializeComponent();
         }
+
+        private void timerTick_Tick(object sender, EventArgs e)
+        { 
+        }
     }
 }
