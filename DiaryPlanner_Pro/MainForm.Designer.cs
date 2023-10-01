@@ -52,6 +52,8 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.userPanel.SuspendLayout();
             this.sidePanel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -124,8 +126,10 @@
             resources.ApplyResources(this.guna2TabControl1, "guna2TabControl1");
             this.guna2TabControl1.Controls.Add(this.tabPage1);
             this.guna2TabControl1.Controls.Add(this.tabPage5);
+            this.guna2TabControl1.Controls.Add(this.tabPage7);
             this.guna2TabControl1.Controls.Add(this.tabPage4);
             this.guna2TabControl1.Controls.Add(this.tabPage2);
+            this.guna2TabControl1.Controls.Add(this.tabPage8);
             this.guna2TabControl1.Controls.Add(this.tabPage6);
             this.guna2TabControl1.Controls.Add(this.tabPage3);
             this.guna2TabControl1.ImageList = this.imageList;
@@ -252,6 +256,18 @@
             resources.ApplyResources(this.guna2Separator1, "guna2Separator1");
             this.guna2Separator1.Name = "guna2Separator1";
             // 
+            // tabPage7
+            // 
+            resources.ApplyResources(this.tabPage7, "tabPage7");
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            resources.ApplyResources(this.tabPage8, "tabPage8");
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -294,5 +310,7 @@
         private Guna.UI2.WinForms.Guna2Panel sidePanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
     }
 }
