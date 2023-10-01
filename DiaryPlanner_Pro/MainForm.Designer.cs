@@ -54,6 +54,8 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.selectPictureBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.userPanel.SuspendLayout();
             this.sidePanel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -61,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
             this.guna2TabControl1.SuspendLayout();
             this.loginFormPanel.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -85,17 +88,18 @@
             // 
             resources.ApplyResources(this.sidePanel, "sidePanel");
             this.sidePanel.BorderColor = System.Drawing.Color.Transparent;
-            this.sidePanel.Controls.Add(this.guna2Panel1);
+            this.sidePanel.Controls.Add(this.guna2Panel2);
             this.sidePanel.Controls.Add(this.guna2TabControl1);
+            this.sidePanel.Controls.Add(this.guna2Panel1);
             this.sidePanel.Name = "sidePanel";
             // 
             // guna2Panel1
             // 
-            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
             this.guna2Panel1.BackColor = System.Drawing.Color.Indigo;
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2Panel1.Controls.Add(this.guna2Separator1);
+            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
             this.guna2Panel1.Name = "guna2Panel1";
             // 
             // guna2CustomGradientPanel2
@@ -268,6 +272,28 @@
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.Indigo;
+            this.guna2Panel2.Controls.Add(this.selectPictureBtn);
+            resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
+            this.guna2Panel2.Name = "guna2Panel2";
+            // 
+            // selectPictureBtn
+            // 
+            this.selectPictureBtn.Animated = true;
+            this.selectPictureBtn.BorderColor = System.Drawing.Color.White;
+            this.selectPictureBtn.BorderRadius = 6;
+            this.selectPictureBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.selectPictureBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.selectPictureBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.selectPictureBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.selectPictureBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.selectPictureBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            resources.ApplyResources(this.selectPictureBtn, "selectPictureBtn");
+            this.selectPictureBtn.ForeColor = System.Drawing.Color.White;
+            this.selectPictureBtn.Name = "selectPictureBtn";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -283,6 +309,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
             this.guna2TabControl1.ResumeLayout(false);
             this.loginFormPanel.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -312,5 +339,7 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2GradientButton selectPictureBtn;
     }
 }
