@@ -17,10 +17,14 @@ namespace DiaryPlanner_Pro
             InitializeComponent();
         }
 
+        #region FUNCTION TO UPDATE THE TIME AND DATE LABEL EVERY 100 MILLISECONDS 
+
         private void timerTick_Tick(object sender, EventArgs e)
         {
             timeLabel.Text = DateTime.Now.ToShortTimeString();
-            dateLabel.Text = DateTime.Now.ToShortDateString();  
+            dateLabel.Text = DateTime.Now.ToShortDateString();
         }
+
+        #endregion
     }
 }
