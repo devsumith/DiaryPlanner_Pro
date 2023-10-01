@@ -49,7 +49,6 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -59,6 +58,7 @@
             this.timeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timerTick = new System.Windows.Forms.Timer(this.components);
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.userPanel.SuspendLayout();
             this.sidePanel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -79,6 +79,7 @@
             this.userPanel.BackColor = System.Drawing.Color.Transparent;
             this.userPanel.BorderColor = System.Drawing.Color.Black;
             this.userPanel.BorderRadius = 10;
+            this.userPanel.Controls.Add(this.guna2HtmlLabel2);
             this.userPanel.Controls.Add(this.sidePanel);
             this.userPanel.Controls.Add(this.guna2ControlBox3);
             this.userPanel.Controls.Add(this.panel1);
@@ -318,6 +319,13 @@
             this.timerTick.Enabled = true;
             this.timerTick.Tick += new System.EventHandler(this.timerTick_Tick);
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2HtmlLabel2, "guna2HtmlLabel2");
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Indigo;
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -326,6 +334,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.userPanel.ResumeLayout(false);
+            this.userPanel.PerformLayout();
             this.sidePanel.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -347,7 +356,6 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private System.Windows.Forms.Timer timer;
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -369,5 +377,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel timeLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel dateLabel;
         private System.Windows.Forms.Timer timerTick;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }
