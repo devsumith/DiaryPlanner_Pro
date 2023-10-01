@@ -315,6 +315,7 @@
             // 
             // timerTick
             // 
+            this.timerTick.Enabled = true;
             this.timerTick.Tick += new System.EventHandler(this.timerTick_Tick);
             // 
             // MainForm
