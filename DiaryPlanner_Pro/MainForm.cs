@@ -18,7 +18,9 @@ namespace DiaryPlanner_Pro
         }
 
         private void timerTick_Tick(object sender, EventArgs e)
-        { 
+        {
+            timeLabel.Text = DateTime.Now.ToShortTimeString();
+            dateLabel.Text = DateTime.Now.ToShortDateString();  
         }
     }
 }
