@@ -32,41 +32,41 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.userPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.sidePanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.userPictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.selectPictureBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.userPictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.selectPictureBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.timeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timerTick = new System.Windows.Forms.Timer(this.components);
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.userPanel.SuspendLayout();
             this.sidePanel.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2TabControl1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
-            this.guna2TabControl1.SuspendLayout();
             this.loginFormPanel.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -87,6 +87,15 @@
             this.userPanel.Controls.Add(this.guna2ControlBox1);
             this.userPanel.FillColor = System.Drawing.Color.White;
             this.userPanel.Name = "userPanel";
+            this.userPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.formPanel_MouseDown);
+            this.userPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.formPanel_MouseMove);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2HtmlLabel2, "guna2HtmlLabel2");
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Indigo;
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             // 
             // sidePanel
             // 
@@ -97,37 +106,43 @@
             this.sidePanel.Controls.Add(this.guna2Panel1);
             this.sidePanel.Name = "sidePanel";
             // 
-            // guna2Panel1
+            // guna2Panel2
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Indigo;
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.guna2CustomGradientPanel2);
-            this.guna2Panel1.Controls.Add(this.guna2Separator1);
-            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
-            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel2.BackColor = System.Drawing.Color.Indigo;
+            this.guna2Panel2.Controls.Add(this.dateLabel);
+            this.guna2Panel2.Controls.Add(this.timeLabel);
+            this.guna2Panel2.Controls.Add(this.selectPictureBtn);
+            resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
+            this.guna2Panel2.Name = "guna2Panel2";
             // 
-            // guna2CustomGradientPanel2
+            // dateLabel
             // 
-            this.guna2CustomGradientPanel2.BorderRadius = 61;
-            this.guna2CustomGradientPanel2.Controls.Add(this.userPictureBox);
-            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
-            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            resources.ApplyResources(this.guna2CustomGradientPanel2, "guna2CustomGradientPanel2");
-            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.dateLabel, "dateLabel");
+            this.dateLabel.ForeColor = System.Drawing.Color.Thistle;
+            this.dateLabel.Name = "dateLabel";
             // 
-            // userPictureBox
+            // timeLabel
             // 
-            this.userPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.userPictureBox.FillColor = System.Drawing.Color.Transparent;
-            this.userPictureBox.Image = global::DiaryPlanner_Pro.Properties.Resources.profile_gradient;
-            this.userPictureBox.ImageRotate = 0F;
-            resources.ApplyResources(this.userPictureBox, "userPictureBox");
-            this.userPictureBox.Name = "userPictureBox";
-            this.userPictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.userPictureBox.TabStop = false;
-            this.userPictureBox.UseTransparentBackground = true;
+            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.timeLabel, "timeLabel");
+            this.timeLabel.ForeColor = System.Drawing.Color.Thistle;
+            this.timeLabel.Name = "timeLabel";
+            // 
+            // selectPictureBtn
+            // 
+            this.selectPictureBtn.Animated = true;
+            this.selectPictureBtn.BorderColor = System.Drawing.Color.White;
+            this.selectPictureBtn.BorderRadius = 6;
+            this.selectPictureBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.selectPictureBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.selectPictureBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.selectPictureBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.selectPictureBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.selectPictureBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            resources.ApplyResources(this.selectPictureBtn, "selectPictureBtn");
+            this.selectPictureBtn.ForeColor = System.Drawing.Color.White;
+            this.selectPictureBtn.Name = "selectPictureBtn";
             // 
             // guna2TabControl1
             // 
@@ -173,6 +188,12 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // tabPage7
+            // 
+            resources.ApplyResources(this.tabPage7, "tabPage7");
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
             // tabPage4
             // 
             resources.ApplyResources(this.tabPage4, "tabPage4");
@@ -184,6 +205,12 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            resources.ApplyResources(this.tabPage8, "tabPage8");
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tabPage6
             // 
@@ -205,6 +232,51 @@
             this.imageList.Images.SetKeyName(1, "home-icon-silhouette.png");
             this.imageList.Images.SetKeyName(2, "reading-book.png");
             this.imageList.Images.SetKeyName(3, "user.png");
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Indigo;
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Controls.Add(this.guna2CustomGradientPanel2);
+            this.guna2Panel1.Controls.Add(this.guna2Separator1);
+            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
+            this.guna2Panel1.Name = "guna2Panel1";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2HtmlLabel1, "guna2HtmlLabel1");
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            // 
+            // guna2CustomGradientPanel2
+            // 
+            this.guna2CustomGradientPanel2.BorderRadius = 61;
+            this.guna2CustomGradientPanel2.Controls.Add(this.userPictureBox);
+            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
+            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
+            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.guna2CustomGradientPanel2, "guna2CustomGradientPanel2");
+            this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
+            // 
+            // userPictureBox
+            // 
+            this.userPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.userPictureBox.FillColor = System.Drawing.Color.Transparent;
+            this.userPictureBox.Image = global::DiaryPlanner_Pro.Properties.Resources.profile_gradient;
+            this.userPictureBox.ImageRotate = 0F;
+            resources.ApplyResources(this.userPictureBox, "userPictureBox");
+            this.userPictureBox.Name = "userPictureBox";
+            this.userPictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.userPictureBox.TabStop = false;
+            this.userPictureBox.UseTransparentBackground = true;
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2Separator1, "guna2Separator1");
+            this.guna2Separator1.Name = "guna2Separator1";
             // 
             // guna2ControlBox3
             // 
@@ -250,81 +322,13 @@
             this.loginFormPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
             this.loginFormPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.loginFormPanel.Name = "loginFormPanel";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2HtmlLabel1, "guna2HtmlLabel1");
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2Separator1, "guna2Separator1");
-            this.guna2Separator1.Name = "guna2Separator1";
-            // 
-            // tabPage7
-            // 
-            resources.ApplyResources(this.tabPage7, "tabPage7");
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            resources.ApplyResources(this.tabPage8, "tabPage8");
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.Indigo;
-            this.guna2Panel2.Controls.Add(this.dateLabel);
-            this.guna2Panel2.Controls.Add(this.timeLabel);
-            this.guna2Panel2.Controls.Add(this.selectPictureBtn);
-            resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
-            this.guna2Panel2.Name = "guna2Panel2";
-            // 
-            // selectPictureBtn
-            // 
-            this.selectPictureBtn.Animated = true;
-            this.selectPictureBtn.BorderColor = System.Drawing.Color.White;
-            this.selectPictureBtn.BorderRadius = 6;
-            this.selectPictureBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.selectPictureBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.selectPictureBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.selectPictureBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.selectPictureBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.selectPictureBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            resources.ApplyResources(this.selectPictureBtn, "selectPictureBtn");
-            this.selectPictureBtn.ForeColor = System.Drawing.Color.White;
-            this.selectPictureBtn.Name = "selectPictureBtn";
-            // 
-            // timeLabel
-            // 
-            this.timeLabel.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.timeLabel, "timeLabel");
-            this.timeLabel.ForeColor = System.Drawing.Color.Thistle;
-            this.timeLabel.Name = "timeLabel";
-            // 
-            // dateLabel
-            // 
-            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.dateLabel, "dateLabel");
-            this.dateLabel.ForeColor = System.Drawing.Color.Thistle;
-            this.dateLabel.Name = "dateLabel";
+            this.loginFormPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.formPanel_MouseDown);
+            this.loginFormPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.formPanel_MouseMove);
             // 
             // timerTick
             // 
             this.timerTick.Enabled = true;
             this.timerTick.Tick += new System.EventHandler(this.timerTick_Tick);
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2HtmlLabel2, "guna2HtmlLabel2");
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Indigo;
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             // 
             // MainForm
             // 
@@ -336,14 +340,14 @@
             this.userPanel.ResumeLayout(false);
             this.userPanel.PerformLayout();
             this.sidePanel.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
+            this.guna2TabControl1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
-            this.guna2TabControl1.ResumeLayout(false);
             this.loginFormPanel.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
