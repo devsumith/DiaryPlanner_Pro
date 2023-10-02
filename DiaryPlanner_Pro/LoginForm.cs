@@ -12,7 +12,14 @@ using System.Runtime.InteropServices;
 namespace DiaryPlanner_Pro
 {
     public partial class LoginForm : Form
-    {      
+    {
+        #region CLASSES
+
+        UserPersonalData userData = new UserPersonalData();
+        Functionality functions = new Functionality();
+
+        #endregion
+
         public LoginForm()
         {
             InitializeComponent();
