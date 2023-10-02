@@ -24,23 +24,6 @@ namespace DiaryPlanner_Pro
             userLabel.Location = new Point((userPanel.Width - userLabel.Width) / 2, userLabel.Location.Y);
         }
 
-        #region FUNCTIONS TO HANDLE THE UI DESIGN OF USERNAME AND PASSWORD BOX
-
-        private void usernameBox_Enter(object sender, EventArgs e) => userNameBorderPanel.BringToFront();
-        private void usernameBox_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(usernameBox.Text))
-                usernameBox.BringToFront();
-        }
-        private void passwordBox_Enter(object sender, EventArgs e) => passwordBorderPanel.BringToFront();
-        private void passwordBox_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(passwordBox.Text))
-                passwordBox.BringToFront();
-        }
-
-        #endregion
-
         #region FUNCTIONS FOR DRAGGING FUNCTIONALITY OF FORM
 
         private void loginFormPanel_MouseMove(object sender, MouseEventArgs e)

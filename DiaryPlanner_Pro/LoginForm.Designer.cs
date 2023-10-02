@@ -41,8 +41,6 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.passwordBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.usernameBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.passwordBorderPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.userNameBorderPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -135,8 +133,6 @@
             this.userPanel.Controls.Add(this.guna2Button1);
             this.userPanel.Controls.Add(this.passwordBox);
             this.userPanel.Controls.Add(this.usernameBox);
-            this.userPanel.Controls.Add(this.passwordBorderPanel);
-            this.userPanel.Controls.Add(this.userNameBorderPanel);
             this.userPanel.Controls.Add(this.guna2ControlBox2);
             this.userPanel.Controls.Add(this.guna2ControlBox1);
             this.userPanel.Controls.Add(this.guna2CustomGradientPanel2);
@@ -150,6 +146,7 @@
             // 
             // guna2GradientButton1
             // 
+            this.guna2GradientButton1.Animated = true;
             this.guna2GradientButton1.BorderColor = System.Drawing.Color.White;
             this.guna2GradientButton1.BorderRadius = 15;
             this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -180,6 +177,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.Animated = true;
             this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
@@ -197,6 +195,7 @@
             // 
             // passwordBox
             // 
+            this.passwordBox.Animated = true;
             this.passwordBox.BorderColor = System.Drawing.Color.LightGray;
             this.passwordBox.BorderThickness = 3;
             this.passwordBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -205,7 +204,7 @@
             this.passwordBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.passwordBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.passwordBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.passwordBox.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.passwordBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.passwordBox.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.passwordBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
             this.passwordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
@@ -227,11 +226,10 @@
             this.passwordBox.TextOffset = new System.Drawing.Point(10, 0);
             this.passwordBox.UseSystemPasswordChar = true;
             this.passwordBox.IconRightClick += new System.EventHandler(this.passwordBox_IconRightClick);
-            this.passwordBox.Enter += new System.EventHandler(this.passwordBox_Enter);
-            this.passwordBox.Leave += new System.EventHandler(this.passwordBox_Leave);
             // 
             // usernameBox
             // 
+            this.usernameBox.Animated = true;
             this.usernameBox.BorderColor = System.Drawing.Color.LightGray;
             this.usernameBox.BorderThickness = 3;
             this.usernameBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -240,7 +238,7 @@
             this.usernameBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.usernameBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.usernameBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.usernameBox.FocusedState.BorderColor = System.Drawing.Color.Transparent;
+            this.usernameBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.usernameBox.FocusedState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.usernameBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
@@ -258,34 +256,11 @@
             this.usernameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.usernameBox.TabIndex = 3;
             this.usernameBox.TextOffset = new System.Drawing.Point(10, 0);
-            this.usernameBox.Enter += new System.EventHandler(this.usernameBox_Enter);
-            this.usernameBox.Leave += new System.EventHandler(this.usernameBox_Leave);
-            // 
-            // passwordBorderPanel
-            // 
-            this.passwordBorderPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            this.passwordBorderPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            this.passwordBorderPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
-            this.passwordBorderPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.passwordBorderPanel.Location = new System.Drawing.Point(49, 390);
-            this.passwordBorderPanel.Name = "passwordBorderPanel";
-            this.passwordBorderPanel.Size = new System.Drawing.Size(257, 3);
-            this.passwordBorderPanel.TabIndex = 6;
-            // 
-            // userNameBorderPanel
-            // 
-            this.userNameBorderPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            this.userNameBorderPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            this.userNameBorderPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
-            this.userNameBorderPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userNameBorderPanel.Location = new System.Drawing.Point(49, 328);
-            this.userNameBorderPanel.Name = "userNameBorderPanel";
-            this.userNameBorderPanel.Size = new System.Drawing.Size(257, 3);
-            this.userNameBorderPanel.TabIndex = 4;
             // 
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
             this.guna2ControlBox2.BorderRadius = 10;
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
@@ -298,6 +273,7 @@
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.BorderRadius = 10;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
@@ -384,14 +360,12 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2TextBox usernameBox;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel passwordBorderPanel;
         private Guna.UI2.WinForms.Guna2TextBox passwordBox;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel userNameBorderPanel;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel userLabel;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2TextBox usernameBox;
     }
 }
 
