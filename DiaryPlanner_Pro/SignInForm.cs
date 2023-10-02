@@ -505,6 +505,12 @@ namespace DiaryPlanner_Pro
                 DiaryPlanner_Pro.Properties.Settings.Default.Save();
 
                 objDBAccess.closeConn(); // Close the database connection.
+
+                // Redirect to the login form
+                this.Hide();
+                var form = new LoginForm();
+                form.FormClosed += (s, args) => this.Close();
+                form.Show();
             }
             else // If the insertion failed, display an error message and enable the finalizeAllBtn.
                 functions.Alert("Error Occured. Try Again!", AlertForm.Type.Error);
