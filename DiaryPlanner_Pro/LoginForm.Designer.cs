@@ -171,9 +171,9 @@
             this.userLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.userLabel.Location = new System.Drawing.Point(90, 222);
             this.userLabel.Name = "userLabel";
-            this.userLabel.Size = new System.Drawing.Size(174, 31);
+            this.userLabel.Size = new System.Drawing.Size(175, 31);
             this.userLabel.TabIndex = 8;
-            this.userLabel.Text = "Welcome, User Name!";
+            this.userLabel.Text = "Welcome, First Name!";
             // 
             // guna2Button1
             // 
