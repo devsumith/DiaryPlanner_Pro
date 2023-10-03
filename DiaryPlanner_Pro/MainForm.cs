@@ -35,11 +35,17 @@ namespace DiaryPlanner_Pro
         private void LoadUserInformation()
         {
             userImage.Image = userData.Image;
-            userNameBox.Text = userData.Username;
+            usernameLabel.Text = userData.Username;
+
+            // When the login form loads, center the 'usernameLabel' horizontally within the 'usernameLabel'.
+            usernameLabel.Location = new Point((headTabPanel.Width - usernameLabel.Width) / 2, usernameLabel.Location.Y);
+
+            // Align the usernameLabelLine to the usernameLabel in size and location.
+            usernameLabelLine.Size = new Size(usernameLabel.Width, usernameLabelLine.Height);
+            usernameLabelLine.Location = new Point((headTabPanel.Width - usernameLabelLine.Width) / 2, usernameLabelLine.Location.Y);
         }
 
         #endregion
-
 
         #region FUNCTION TO UPDATE THE TIME AND DATE LABEL EVERY 100 MILLISECONDS 
 
