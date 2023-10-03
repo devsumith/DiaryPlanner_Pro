@@ -583,55 +583,55 @@
   <data name="&gt;&gt;guna2TabControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="guna2HtmlLabel1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="userNameBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Bahnschrift Condensed, 14.25pt</value>
   </data>
-  <data name="guna2HtmlLabel1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="userNameBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>57, 155</value>
   </data>
-  <data name="guna2HtmlLabel1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="userNameBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 25</value>
   </data>
-  <data name="guna2HtmlLabel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="userNameBox.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="guna2HtmlLabel1.Text" xml:space="preserve">
+  <data name="userNameBox.Text" xml:space="preserve">
     <value>Username</value>
   </data>
-  <data name="&gt;&gt;guna2HtmlLabel1.Name" xml:space="preserve">
-    <value>guna2HtmlLabel1</value>
+  <data name="&gt;&gt;userNameBox.Name" xml:space="preserve">
+    <value>userNameBox</value>
   </data>
-  <data name="&gt;&gt;guna2HtmlLabel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;userNameBox.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;guna2HtmlLabel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;userNameBox.Parent" xml:space="preserve">
     <value>guna2Panel1</value>
   </data>
-  <data name="&gt;&gt;guna2HtmlLabel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;userNameBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="userPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="userImage.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="userPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="userImage.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 125</value>
   </data>
-  <data name="userPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="userImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="userPictureBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="userImage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;userPictureBox.Name" xml:space="preserve">
-    <value>userPictureBox</value>
+  <data name="&gt;&gt;userImage.Name" xml:space="preserve">
+    <value>userImage</value>
   </data>
-  <data name="&gt;&gt;userPictureBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;userImage.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CirclePictureBox, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;userPictureBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;userImage.Parent" xml:space="preserve">
     <value>guna2CustomGradientPanel2</value>
   </data>
-  <data name="&gt;&gt;userPictureBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;userImage.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="guna2CustomGradientPanel2.Location" type="System.Drawing.Point, System.Drawing">

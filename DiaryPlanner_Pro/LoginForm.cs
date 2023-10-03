@@ -23,7 +23,11 @@ namespace DiaryPlanner_Pro
 
         #endregion
 
+        #region FIELDS
+
         DataTable dtUserData = new DataTable();
+
+        #endregion
 
         public LoginForm()
         {
@@ -107,6 +111,9 @@ namespace DiaryPlanner_Pro
 
         private void CheckDatabaseToLogin()
         {
+            // Clear the dtUserData, since it has been used to load the user's image and first name.
+            dtUserData.Clear();
+
             // Define a SQL query to retrieve user data based on provided username and password.
             string query = "SELECT * FROM UserPersonalData WHERE UserName = '" + usernameBox.Text + "' AND Password = '" + passwordBox.Text + "'";
             objDBAccess.readDatathroughAdapter(query, dtUserData);
