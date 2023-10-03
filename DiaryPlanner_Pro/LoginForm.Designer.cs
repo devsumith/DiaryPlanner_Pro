@@ -36,7 +36,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.userPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.loginBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.userLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.passwordBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -128,7 +128,7 @@
             this.userPanel.BackColor = System.Drawing.Color.Transparent;
             this.userPanel.BorderColor = System.Drawing.Color.Black;
             this.userPanel.BorderRadius = 10;
-            this.userPanel.Controls.Add(this.guna2GradientButton1);
+            this.userPanel.Controls.Add(this.loginBtn);
             this.userPanel.Controls.Add(this.userLabel);
             this.userPanel.Controls.Add(this.guna2Button1);
             this.userPanel.Controls.Add(this.passwordBox);
@@ -144,24 +144,25 @@
             this.userPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.loginFormPanel_MouseDown);
             this.userPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.loginFormPanel_MouseMove);
             // 
-            // guna2GradientButton1
+            // loginBtn
             // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BorderColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.BorderRadius = 15;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(72, 455);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(210, 38);
-            this.guna2GradientButton1.TabIndex = 9;
-            this.guna2GradientButton1.Text = "Login";
+            this.loginBtn.Animated = true;
+            this.loginBtn.BorderColor = System.Drawing.Color.White;
+            this.loginBtn.BorderRadius = 15;
+            this.loginBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.loginBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.loginBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.loginBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.loginBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.loginBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            this.loginBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.ForeColor = System.Drawing.Color.White;
+            this.loginBtn.Location = new System.Drawing.Point(72, 455);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(210, 38);
+            this.loginBtn.TabIndex = 9;
+            this.loginBtn.Text = "Login";
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // userLabel
             // 
@@ -363,7 +364,7 @@
         private Guna.UI2.WinForms.Guna2TextBox passwordBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel userLabel;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton loginBtn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox usernameBox;
     }
