@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace DiaryPlanner_Pro
 {
@@ -40,11 +41,30 @@ namespace DiaryPlanner_Pro
         {
             DataTable dtUserData = new DataTable();
 
+            // Define the SQL query to retrieve the 'Image' and 'FirstName' columns from the 'UserPersonalData' table.
             string query = "SELECT Image, FirstName FROM UserPersonalData";
+
+            // Call a method to execute the SQL query and populate the 'dtUserData' DataTable.
             objDBAccess.readDatathroughAdapter(query, dtUserData);
 
+            // Check if there's exactly one row of data retrieved from the database.
             if (dtUserData.Rows.Count == 1)
             {
+                // Retrieve the 'Image' column data as a byte array from the first (and only) row.
+                byte[] imageBytes = (byte[])dtUserData.Rows[0]["Image"];
+
+                // Create a MemoryStream to store the image data to the 'Image' property of the 'userData'.
+                using (MemoryStream ms = new MemoryStream(imageBytes))
+                { 
+                    Image image = Image.FromStream(ms);
+                    userData.Image = image;
+                }
+
+                // Set the 'Image' property of the 'userImage' control to the retrieved image.
+                userImage.Image = userData.Image;
+
+                // Retrieve the 'FirstName' column data as a string from the first (and only) row.
+                // Update the text of the 'userLabel' control to display a welcome message.
                 userData.FirstName = dtUserData.Rows[0]["FirstName"].ToString();
                 userLabel.Text = $"Welcome, {userData.FirstName}";
             }
