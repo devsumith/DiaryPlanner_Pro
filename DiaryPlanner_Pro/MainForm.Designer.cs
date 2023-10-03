@@ -49,9 +49,9 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.userNameBox = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.userPictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.userImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -65,7 +65,7 @@
             this.guna2TabControl1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userImage)).BeginInit();
             this.loginFormPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -236,23 +236,23 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Indigo;
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Controls.Add(this.userNameBox);
             this.guna2Panel1.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2Panel1.Controls.Add(this.guna2Separator1);
             resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
             this.guna2Panel1.Name = "guna2Panel1";
             // 
-            // guna2HtmlLabel1
+            // userNameBox
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2HtmlLabel1, "guna2HtmlLabel1");
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.userNameBox.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.userNameBox, "userNameBox");
+            this.userNameBox.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.userNameBox.Name = "userNameBox";
             // 
             // guna2CustomGradientPanel2
             // 
             this.guna2CustomGradientPanel2.BorderRadius = 61;
-            this.guna2CustomGradientPanel2.Controls.Add(this.userPictureBox);
+            this.guna2CustomGradientPanel2.Controls.Add(this.userImage);
             this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
@@ -260,17 +260,17 @@
             resources.ApplyResources(this.guna2CustomGradientPanel2, "guna2CustomGradientPanel2");
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             // 
-            // userPictureBox
+            // userImage
             // 
-            this.userPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.userPictureBox.FillColor = System.Drawing.Color.Transparent;
-            this.userPictureBox.Image = global::DiaryPlanner_Pro.Properties.Resources.profile_gradient;
-            this.userPictureBox.ImageRotate = 0F;
-            resources.ApplyResources(this.userPictureBox, "userPictureBox");
-            this.userPictureBox.Name = "userPictureBox";
-            this.userPictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.userPictureBox.TabStop = false;
-            this.userPictureBox.UseTransparentBackground = true;
+            this.userImage.BackColor = System.Drawing.Color.Transparent;
+            this.userImage.FillColor = System.Drawing.Color.Transparent;
+            this.userImage.Image = global::DiaryPlanner_Pro.Properties.Resources.profile_gradient;
+            this.userImage.ImageRotate = 0F;
+            resources.ApplyResources(this.userImage, "userImage");
+            this.userImage.Name = "userImage";
+            this.userImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.userImage.TabStop = false;
+            this.userImage.UseTransparentBackground = true;
             // 
             // guna2Separator1
             // 
@@ -337,6 +337,7 @@
             this.Controls.Add(this.loginFormPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.userPanel.ResumeLayout(false);
             this.userPanel.PerformLayout();
             this.sidePanel.ResumeLayout(false);
@@ -346,7 +347,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userImage)).EndInit();
             this.loginFormPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -369,10 +370,10 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage6;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox userPictureBox;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox userImage;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2Panel sidePanel;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel userNameBox;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;

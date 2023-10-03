@@ -12,7 +12,11 @@ namespace DiaryPlanner_Pro
 {
     public partial class MainForm : Form
     {
-        private UserPersonalData userData;
+        #region FIELDS
+
+            private UserPersonalData userData;
+
+        #endregion
 
         public MainForm(UserPersonalData userData)
         {
@@ -20,6 +24,22 @@ namespace DiaryPlanner_Pro
 
             this.userData = userData;
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            LoadUserInformation();
+        }
+
+        #region FUNCTION TO LOAD THE USER'S INFORMATION
+
+        private void LoadUserInformation()
+        {
+            userImage.Image = userData.Image;
+            userNameBox.Text = userData.Username;
+        }
+
+        #endregion
+
 
         #region FUNCTION TO UPDATE THE TIME AND DATE LABEL EVERY 100 MILLISECONDS 
 
@@ -49,5 +69,6 @@ namespace DiaryPlanner_Pro
         private void formPanel_MouseDown(object sender, MouseEventArgs e) => lastPoint = new Point(e.X, e.Y);
 
         #endregion
+
     }
 }
