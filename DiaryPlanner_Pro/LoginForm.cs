@@ -17,6 +17,7 @@ namespace DiaryPlanner_Pro
 
         UserPersonalData userData = new UserPersonalData();
         Functionality functions = new Functionality();
+        DBAccess objDBAccess = new DBAccess();
 
         #endregion
 
@@ -27,9 +28,29 @@ namespace DiaryPlanner_Pro
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            GetImageAndFirstName();
+
             // When the login form loads, center the 'userLabel' horizontally within the 'userPanel'.
             userLabel.Location = new Point((userPanel.Width - userLabel.Width) / 2, userLabel.Location.Y);
         }
+
+        #region FUNCTIONS TO ACCESS THE DATABASE
+
+        private void GetImageAndFirstName()
+        {
+            DataTable dtUserData = new DataTable();
+
+            string query = "SELECT Image, FirstName FROM UserPersonalData";
+            objDBAccess.readDatathroughAdapter(query, dtUserData);
+
+            if (dtUserData.Rows.Count == 1)
+            {
+                userData.FirstName = dtUserData.Rows[0]["FirstName"].ToString();
+                userLabel.Text = $"Welcome, {userData.FirstName}";
+            }
+        }
+
+        #endregion
 
         #region FUNCTIONS FOR DRAGGING FUNCTIONALITY OF FORM
 
