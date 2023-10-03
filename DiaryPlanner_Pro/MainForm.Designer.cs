@@ -48,11 +48,11 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.userNameBox = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.headTabPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.usernameLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.userImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.usernameLabelLine = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -63,7 +63,7 @@
             this.sidePanel.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.headTabPanel.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userImage)).BeginInit();
             this.loginFormPanel.SuspendLayout();
@@ -103,7 +103,7 @@
             this.sidePanel.BorderColor = System.Drawing.Color.Transparent;
             this.sidePanel.Controls.Add(this.guna2Panel2);
             this.sidePanel.Controls.Add(this.guna2TabControl1);
-            this.sidePanel.Controls.Add(this.guna2Panel1);
+            this.sidePanel.Controls.Add(this.headTabPanel);
             this.sidePanel.Name = "sidePanel";
             // 
             // guna2Panel2
@@ -233,21 +233,21 @@
             this.imageList.Images.SetKeyName(2, "reading-book.png");
             this.imageList.Images.SetKeyName(3, "user.png");
             // 
-            // guna2Panel1
+            // headTabPanel
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Indigo;
-            this.guna2Panel1.Controls.Add(this.userNameBox);
-            this.guna2Panel1.Controls.Add(this.guna2CustomGradientPanel2);
-            this.guna2Panel1.Controls.Add(this.guna2Separator1);
-            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
-            this.guna2Panel1.Name = "guna2Panel1";
+            this.headTabPanel.BackColor = System.Drawing.Color.Indigo;
+            this.headTabPanel.Controls.Add(this.usernameLabel);
+            this.headTabPanel.Controls.Add(this.guna2CustomGradientPanel2);
+            this.headTabPanel.Controls.Add(this.usernameLabelLine);
+            resources.ApplyResources(this.headTabPanel, "headTabPanel");
+            this.headTabPanel.Name = "headTabPanel";
             // 
-            // userNameBox
+            // usernameLabel
             // 
-            this.userNameBox.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.userNameBox, "userNameBox");
-            this.userNameBox.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.userNameBox.Name = "userNameBox";
+            this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.usernameLabel, "usernameLabel");
+            this.usernameLabel.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.usernameLabel.Name = "usernameLabel";
             // 
             // guna2CustomGradientPanel2
             // 
@@ -272,11 +272,11 @@
             this.userImage.TabStop = false;
             this.userImage.UseTransparentBackground = true;
             // 
-            // guna2Separator1
+            // usernameLabelLine
             // 
-            this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.guna2Separator1, "guna2Separator1");
-            this.guna2Separator1.Name = "guna2Separator1";
+            this.usernameLabelLine.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.usernameLabelLine, "usernameLabelLine");
+            this.usernameLabelLine.Name = "usernameLabelLine";
             // 
             // guna2ControlBox3
             // 
@@ -344,8 +344,8 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.guna2TabControl1.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.headTabPanel.ResumeLayout(false);
+            this.headTabPanel.PerformLayout();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.userImage)).EndInit();
             this.loginFormPanel.ResumeLayout(false);
@@ -369,12 +369,12 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage6;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel headTabPanel;
         private Guna.UI2.WinForms.Guna2CirclePictureBox userImage;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2Panel sidePanel;
-        private Guna.UI2.WinForms.Guna2HtmlLabel userNameBox;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel usernameLabel;
+        private Guna.UI2.WinForms.Guna2Separator usernameLabelLine;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
