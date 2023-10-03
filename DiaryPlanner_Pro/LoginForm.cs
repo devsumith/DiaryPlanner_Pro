@@ -29,6 +29,7 @@ namespace DiaryPlanner_Pro
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            // Load the user image and first name from the database.
             GetImageAndFirstName();
 
             // When the login form loads, center the 'userLabel' horizontally within the 'userPanel'.
@@ -36,6 +37,8 @@ namespace DiaryPlanner_Pro
         }
 
         #region FUNCTIONS TO ACCESS THE DATABASE
+
+        #region FUNCTION TO GET THE IMAGE AND FIRST NAME FOR THE LoginForm LOAD
 
         private void GetImageAndFirstName()
         {
@@ -68,7 +71,42 @@ namespace DiaryPlanner_Pro
                 userData.FirstName = dtUserData.Rows[0]["FirstName"].ToString();
                 userLabel.Text = $"Welcome, {userData.FirstName}";
             }
+
+            // Close the database connection here.
+            objDBAccess.closeConn();
         }
+
+        #endregion
+
+        #region FUNCTION TO LOGIN WITH DATABASE VALIDATION
+
+        private void CheckDatabaseToLogin()
+        {
+            DataTable userData = new DataTable();
+
+            // Define a SQL query to retrieve user data based on provided username and password.
+            string query = "SELECT * FROM UserPersonalData WHERE UserName = '" + usernameBox.Text + "' AND Password = '" + passwordBox.Text + "'";
+            objDBAccess.readDatathroughAdapter(query, userData);
+
+            // Close the database connection when you're done with it.
+            objDBAccess.closeConn();
+
+            // Check if exactly one row of data was retrieved from the database.
+            if (userData.Rows.Count == 1)
+            {
+                functions.Alert("Logged-In Successfully", AlertForm.Type.Success);
+
+                // Redirect to the main form after the sucessfull logged-in.
+                this.Hide();
+                var MainForm = new MainForm();
+                MainForm.FormClosed += (s, args) => this.Close();
+                MainForm.Show();
+            }
+            else // Display an error alert message indicating incorrect username or password input.
+                functions.Alert("Incorrect Input", AlertForm.Type.Error);
+        }
+
+        #endregion
 
         #endregion
 
@@ -121,5 +159,10 @@ namespace DiaryPlanner_Pro
         }
 
         #endregion
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
