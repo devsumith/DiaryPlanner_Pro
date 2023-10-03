@@ -12,9 +12,13 @@ namespace DiaryPlanner_Pro
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private UserPersonalData userData;
+
+        public MainForm(UserPersonalData userData)
         {
             InitializeComponent();
+
+            this.userData = userData;
         }
 
         #region FUNCTION TO UPDATE THE TIME AND DATE LABEL EVERY 100 MILLISECONDS 
