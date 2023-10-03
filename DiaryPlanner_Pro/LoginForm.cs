@@ -119,16 +119,27 @@ namespace DiaryPlanner_Pro
             // Check if exactly one row of data was retrieved from the database.
             if (userData.Rows.Count == 1)
             {
-                functions.Alert("Logged-In Successfully", AlertForm.Type.Success);
+                // Check if the entered username/password from the database (in userData) are equal, considering character casing.
+                bool ifUsername = string.Equals(usernameBox.Text, userData.Rows[0]["UserName"].ToString(), StringComparison.Ordinal);
+                bool ifPassword = string.Equals(passwordBox.Text, userData.Rows[0]["Password"].ToString(), StringComparison.Ordinal);
 
-                // Redirect to the main form after the sucessfull logged-in.
-                this.Hide();
-                var MainForm = new MainForm();
-                MainForm.FormClosed += (s, args) => this.Close();
-                MainForm.Show();
+                // If both username and password match (case-sensitive), then the login is successful.
+                if (ifUsername && ifPassword)
+                {
+                    functions.Alert("Logged-In Successfully", AlertForm.Type.Success);
+
+                    // Redirect to the main form after the sucessfull logged-in.
+                    this.Hide();
+                    var MainForm = new MainForm();
+                    MainForm.FormClosed += (s, args) => this.Close();
+                    MainForm.Show();
+
+                    return; // Exit the method after successful login.
+                }
             }
-            else // Display an error alert message indicating incorrect username or password input.
-                functions.Alert("Incorrect Input", AlertForm.Type.Error);
+
+            // Display an error alert message indicating incorrect username or password input.
+            functions.Alert("Incorrect Input", AlertForm.Type.Error);
         }
 
         #endregion
