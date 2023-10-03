@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
+using Guna.UI2.WinForms;
 
 namespace DiaryPlanner_Pro
 {
@@ -35,6 +36,30 @@ namespace DiaryPlanner_Pro
             // When the login form loads, center the 'userLabel' horizontally within the 'userPanel'.
             userLabel.Location = new Point((userPanel.Width - userLabel.Width) / 2, userLabel.Location.Y);
         }
+
+        #region FUNCTION FOR LOGIN VALIDATION
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            // Iterate through all controls within the 'userPanel' control.
+            // Check if the current control is a Guna2TextBox and its text is empty.
+            // Display an informational alert message and return early if any textbox is empty.
+            foreach (Control control in userPanel.Controls)
+                if (control is Guna2TextBox textBox && string.IsNullOrEmpty(textBox.Text))
+                {
+                    functions.Alert("Complete the Requirements", AlertForm.Type.Info);
+                    return;
+                }
+
+            // If all textboxes are filled, start the loading screen.
+            var flashingScreenForm = new FlashingScreenForm();
+            flashingScreenForm.ShowDialog();
+
+            // Check the database for login credentials.
+            CheckDatabaseToLogin();
+        }
+
+        #endregion
 
         #region FUNCTIONS TO ACCESS THE DATABASE
 
@@ -78,7 +103,7 @@ namespace DiaryPlanner_Pro
 
         #endregion
 
-        #region FUNCTION TO LOGIN WITH DATABASE VALIDATION
+        #region FUNCTION TO CHECK THE DATABASE TO BE ABLE TO LOGIN
 
         private void CheckDatabaseToLogin()
         {
@@ -159,10 +184,5 @@ namespace DiaryPlanner_Pro
         }
 
         #endregion
-
-        private void loginBtn_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
