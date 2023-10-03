@@ -23,6 +23,8 @@ namespace DiaryPlanner_Pro
 
         #endregion
 
+        DataTable dtUserData = new DataTable();
+
         public LoginForm()
         {
             InitializeComponent();
@@ -67,8 +69,6 @@ namespace DiaryPlanner_Pro
 
         private void GetImageAndFirstName()
         {
-            DataTable dtUserData = new DataTable();
-
             // Define the SQL query to retrieve the 'Image' and 'FirstName' columns from the 'UserPersonalData' table.
             string query = "SELECT Image, FirstName FROM UserPersonalData";
 
@@ -107,30 +107,31 @@ namespace DiaryPlanner_Pro
 
         private void CheckDatabaseToLogin()
         {
-            DataTable userData = new DataTable();
-
             // Define a SQL query to retrieve user data based on provided username and password.
             string query = "SELECT * FROM UserPersonalData WHERE UserName = '" + usernameBox.Text + "' AND Password = '" + passwordBox.Text + "'";
-            objDBAccess.readDatathroughAdapter(query, userData);
+            objDBAccess.readDatathroughAdapter(query, dtUserData);
 
             // Close the database connection when you're done with it.
             objDBAccess.closeConn();
 
             // Check if exactly one row of data was retrieved from the database.
-            if (userData.Rows.Count == 1)
+            if (dtUserData.Rows.Count == 1)
             {
                 // Check if the entered username/password from the database (in userData) are equal, considering character casing.
-                bool ifUsername = string.Equals(usernameBox.Text, userData.Rows[0]["UserName"].ToString(), StringComparison.Ordinal);
-                bool ifPassword = string.Equals(passwordBox.Text, userData.Rows[0]["Password"].ToString(), StringComparison.Ordinal);
+                bool ifUsername = string.Equals(usernameBox.Text, dtUserData.Rows[0]["UserName"].ToString(), StringComparison.Ordinal);
+                bool ifPassword = string.Equals(passwordBox.Text, dtUserData.Rows[0]["Password"].ToString(), StringComparison.Ordinal);
 
                 // If both username and password match (case-sensitive), then the login is successful.
                 if (ifUsername && ifPassword)
                 {
                     functions.Alert("Logged-In Successfully", AlertForm.Type.Success);
 
+                    // Store the user's retrieved information from the database to the UserPersonalData class.
+                    StoreInformation();
+
                     // Redirect to the main form after the sucessfull logged-in.
                     this.Hide();
-                    var MainForm = new MainForm();
+                    var MainForm = new MainForm(userData);
                     MainForm.FormClosed += (s, args) => this.Close();
                     MainForm.Show();
 
@@ -143,6 +144,23 @@ namespace DiaryPlanner_Pro
         }
 
         #endregion
+
+        #endregion
+
+        #region FUNCTION TO STORE THE RETRIEVE DATA FROM THE DATABASE TO THE UserPersonalData CLASS
+
+        private void StoreInformation()
+        {
+            userData.FirstName = dtUserData.Rows[0]["FirstName"].ToString();
+            userData.MiddleName = dtUserData.Rows[0]["MiddleName"].ToString();
+            userData.LastName = dtUserData.Rows[0]["LastName"].ToString();
+            userData.ExtensionName = dtUserData.Rows[0]["ExtensionName"].ToString();
+            userData.Gender = dtUserData.Rows[0]["Gender"].ToString();
+            userData.BirthDate = dtUserData.Rows[0]["BirthDate"].ToString();
+            userData.GmailAddress = dtUserData.Rows[0]["GmailAddress"].ToString();
+            userData.ContactNumber = dtUserData.Rows[0]["ContactNumber"].ToString();
+            userData.Username = dtUserData.Rows[0]["Username"].ToString();
+        }
 
         #endregion
 

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace DiaryPlanner_Pro
 {
-    class UserPersonalData
+    public class UserPersonalData
     {
         public Image Image { get; set; }
         public string LastName { get; set; }
