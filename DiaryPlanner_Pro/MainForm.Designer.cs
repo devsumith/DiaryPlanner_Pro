@@ -275,6 +275,7 @@
             // usernameLabelLine
             // 
             this.usernameLabelLine.BackColor = System.Drawing.Color.Transparent;
+            this.usernameLabelLine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             resources.ApplyResources(this.usernameLabelLine, "usernameLabelLine");
             this.usernameLabelLine.Name = "usernameLabelLine";
             // 

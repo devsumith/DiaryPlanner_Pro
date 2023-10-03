@@ -75,6 +75,5 @@ namespace DiaryPlanner_Pro
         private void formPanel_MouseDown(object sender, MouseEventArgs e) => lastPoint = new Point(e.X, e.Y);
 
         #endregion
-
     }
 }
