@@ -311,6 +311,7 @@
             this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.BorderRadius = 10;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             // 
