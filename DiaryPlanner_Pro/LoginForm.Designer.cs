@@ -47,6 +47,7 @@
             this.userImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.rememberMeCBox = new Guna.UI2.WinForms.Guna2CheckBox();
             this.loginFormPanel.SuspendLayout();
             this.userPanel.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
@@ -128,6 +129,7 @@
             this.userPanel.BackColor = System.Drawing.Color.Transparent;
             this.userPanel.BorderColor = System.Drawing.Color.Black;
             this.userPanel.BorderRadius = 10;
+            this.userPanel.Controls.Add(this.rememberMeCBox);
             this.userPanel.Controls.Add(this.loginBtn);
             this.userPanel.Controls.Add(this.userLabel);
             this.userPanel.Controls.Add(this.guna2Button1);
@@ -187,7 +189,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.LightGray;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.guna2Button1.Location = new System.Drawing.Point(177, 395);
+            this.guna2Button1.Location = new System.Drawing.Point(178, 395);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Size = new System.Drawing.Size(144, 21);
@@ -328,6 +330,25 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
+            // rememberMeCBox
+            // 
+            this.rememberMeCBox.AutoSize = true;
+            this.rememberMeCBox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.rememberMeCBox.CheckedState.BorderRadius = 3;
+            this.rememberMeCBox.CheckedState.BorderThickness = 1;
+            this.rememberMeCBox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.rememberMeCBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rememberMeCBox.ForeColor = System.Drawing.Color.LightGray;
+            this.rememberMeCBox.Location = new System.Drawing.Point(50, 397);
+            this.rememberMeCBox.Name = "rememberMeCBox";
+            this.rememberMeCBox.Size = new System.Drawing.Size(120, 19);
+            this.rememberMeCBox.TabIndex = 10;
+            this.rememberMeCBox.Text = "Remember me";
+            this.rememberMeCBox.UncheckedState.BorderColor = System.Drawing.Color.LightGray;
+            this.rememberMeCBox.UncheckedState.BorderRadius = 3;
+            this.rememberMeCBox.UncheckedState.BorderThickness = 1;
+            this.rememberMeCBox.UncheckedState.FillColor = System.Drawing.Color.White;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,6 +389,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton loginBtn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox usernameBox;
+        private Guna.UI2.WinForms.Guna2CheckBox rememberMeCBox;
     }
 }
 
