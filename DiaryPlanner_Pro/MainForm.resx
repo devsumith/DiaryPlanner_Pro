@@ -485,7 +485,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADY
-        EAAAAk1TRnQBSQFMAgEBBAEAATABAAEwAQABGQEAARkBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        EAAAAk1TRnQBSQFMAgEBBAEAATgBAAE4AQABGQEAARkBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABZAMAATIDAAEBAQABCAUAAYgBExgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
@@ -587,16 +587,16 @@
     <value>Bahnschrift Condensed, 14.25pt</value>
   </data>
   <data name="usernameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 155</value>
+    <value>58, 155</value>
   </data>
   <data name="usernameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 25</value>
+    <value>65, 25</value>
   </data>
   <data name="usernameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
   <data name="usernameLabel.Text" xml:space="preserve">
-    <value>Username</value>
+    <value>Full Name</value>
   </data>
   <data name="&gt;&gt;usernameLabel.Name" xml:space="preserve">
     <value>usernameLabel</value>
@@ -656,10 +656,10 @@
     <value>1</value>
   </data>
   <data name="usernameLabelLine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 175</value>
+    <value>58, 175</value>
   </data>
   <data name="usernameLabelLine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 10</value>
+    <value>65, 10</value>
   </data>
   <data name="usernameLabelLine.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
