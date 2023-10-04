@@ -35,7 +35,7 @@ namespace DiaryPlanner_Pro
         private void LoadUserInformation()
         {
             userImage.Image = userData.Image;
-            usernameLabel.Text = $"{userData.LastName}, {userData.FirstName} {userData.MiddleName[0]}.";
+            usernameLabel.Text = $"{userData.LastName}, {userData.FirstName}";
 
             // When the login form loads, center the 'usernameLabel' horizontally within the 'usernameLabel'.
             usernameLabel.Location = new Point((headTabPanel.Width - usernameLabel.Width) / 2, usernameLabel.Location.Y);
