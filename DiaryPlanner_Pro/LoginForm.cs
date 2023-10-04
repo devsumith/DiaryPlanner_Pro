@@ -98,7 +98,7 @@ namespace DiaryPlanner_Pro
                 // Retrieve the 'FirstName' column data as a string from the first (and only) row.
                 // Update the text of the 'userLabel' control to display a welcome message.
                 userData.FirstName = dtUserData.Rows[0]["FirstName"].ToString();
-                userLabel.Text = $"Welcome, {userData.FirstName}";
+                userLabel.Text = $"Welcome, {userData.FirstName}!";
             }
 
             // Close the database connection here.
