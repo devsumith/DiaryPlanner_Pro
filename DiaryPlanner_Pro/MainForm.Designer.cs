@@ -37,7 +37,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.dateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.selectPictureBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.logoutBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -111,7 +111,7 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.Indigo;
             this.guna2Panel2.Controls.Add(this.dateLabel);
             this.guna2Panel2.Controls.Add(this.timeLabel);
-            this.guna2Panel2.Controls.Add(this.selectPictureBtn);
+            this.guna2Panel2.Controls.Add(this.logoutBtn);
             resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
             this.guna2Panel2.Name = "guna2Panel2";
             // 
@@ -129,20 +129,21 @@
             this.timeLabel.ForeColor = System.Drawing.Color.Thistle;
             this.timeLabel.Name = "timeLabel";
             // 
-            // selectPictureBtn
+            // logoutBtn
             // 
-            this.selectPictureBtn.Animated = true;
-            this.selectPictureBtn.BorderColor = System.Drawing.Color.White;
-            this.selectPictureBtn.BorderRadius = 6;
-            this.selectPictureBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.selectPictureBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.selectPictureBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.selectPictureBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.selectPictureBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.selectPictureBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            resources.ApplyResources(this.selectPictureBtn, "selectPictureBtn");
-            this.selectPictureBtn.ForeColor = System.Drawing.Color.White;
-            this.selectPictureBtn.Name = "selectPictureBtn";
+            this.logoutBtn.Animated = true;
+            this.logoutBtn.BorderColor = System.Drawing.Color.White;
+            this.logoutBtn.BorderRadius = 6;
+            this.logoutBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.logoutBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.logoutBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.logoutBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.logoutBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.logoutBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            resources.ApplyResources(this.logoutBtn, "logoutBtn");
+            this.logoutBtn.ForeColor = System.Drawing.Color.White;
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // guna2TabControl1
             // 
@@ -390,7 +391,7 @@
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2GradientButton selectPictureBtn;
+        private Guna.UI2.WinForms.Guna2GradientButton logoutBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel timeLabel;
         private Guna.UI2.WinForms.Guna2HtmlLabel dateLabel;
         private System.Windows.Forms.Timer timerTick;
