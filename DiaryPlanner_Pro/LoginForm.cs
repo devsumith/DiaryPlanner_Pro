@@ -171,6 +171,15 @@ namespace DiaryPlanner_Pro
 
         #endregion
 
+        #region FUNCTION TO CHECK THE CHECKED STATE OF "REMEMBER ME"
+
+        private void RememberMeCheckedState()
+        {
+
+        }
+
+        #endregion
+
         #region FUNCTIONS FOR DRAGGING FUNCTIONALITY OF FORM
 
         private void loginFormPanel_MouseMove(object sender, MouseEventArgs e)
