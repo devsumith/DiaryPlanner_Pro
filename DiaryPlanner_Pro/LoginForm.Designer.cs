@@ -36,6 +36,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.userPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.rememberMeCBox = new Guna.UI2.WinForms.Guna2CheckBox();
             this.loginBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.userLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -47,7 +48,8 @@
             this.userImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.rememberMeCBox = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.loginFormPanel.SuspendLayout();
             this.userPanel.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
@@ -73,8 +75,6 @@
             this.loginFormPanel.Name = "loginFormPanel";
             this.loginFormPanel.Size = new System.Drawing.Size(855, 551);
             this.loginFormPanel.TabIndex = 2;
-            this.loginFormPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.loginFormPanel_MouseDown);
-            this.loginFormPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.loginFormPanel_MouseMove);
             // 
             // guna2HtmlLabel5
             // 
@@ -143,8 +143,26 @@
             this.userPanel.Name = "userPanel";
             this.userPanel.Size = new System.Drawing.Size(354, 536);
             this.userPanel.TabIndex = 1;
-            this.userPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.loginFormPanel_MouseDown);
-            this.userPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.loginFormPanel_MouseMove);
+            // 
+            // rememberMeCBox
+            // 
+            this.rememberMeCBox.Animated = true;
+            this.rememberMeCBox.AutoSize = true;
+            this.rememberMeCBox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.rememberMeCBox.CheckedState.BorderRadius = 3;
+            this.rememberMeCBox.CheckedState.BorderThickness = 1;
+            this.rememberMeCBox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
+            this.rememberMeCBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rememberMeCBox.ForeColor = System.Drawing.Color.LightGray;
+            this.rememberMeCBox.Location = new System.Drawing.Point(50, 397);
+            this.rememberMeCBox.Name = "rememberMeCBox";
+            this.rememberMeCBox.Size = new System.Drawing.Size(120, 19);
+            this.rememberMeCBox.TabIndex = 10;
+            this.rememberMeCBox.Text = "Remember me";
+            this.rememberMeCBox.UncheckedState.BorderColor = System.Drawing.Color.LightGray;
+            this.rememberMeCBox.UncheckedState.BorderRadius = 3;
+            this.rememberMeCBox.UncheckedState.BorderThickness = 1;
+            this.rememberMeCBox.UncheckedState.FillColor = System.Drawing.Color.White;
             // 
             // loginBtn
             // 
@@ -330,25 +348,17 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // rememberMeCBox
+            // guna2DragControl1
             // 
-            this.rememberMeCBox.Animated = true;
-            this.rememberMeCBox.AutoSize = true;
-            this.rememberMeCBox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.rememberMeCBox.CheckedState.BorderRadius = 3;
-            this.rememberMeCBox.CheckedState.BorderThickness = 1;
-            this.rememberMeCBox.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
-            this.rememberMeCBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rememberMeCBox.ForeColor = System.Drawing.Color.LightGray;
-            this.rememberMeCBox.Location = new System.Drawing.Point(50, 397);
-            this.rememberMeCBox.Name = "rememberMeCBox";
-            this.rememberMeCBox.Size = new System.Drawing.Size(120, 19);
-            this.rememberMeCBox.TabIndex = 10;
-            this.rememberMeCBox.Text = "Remember me";
-            this.rememberMeCBox.UncheckedState.BorderColor = System.Drawing.Color.LightGray;
-            this.rememberMeCBox.UncheckedState.BorderRadius = 3;
-            this.rememberMeCBox.UncheckedState.BorderThickness = 1;
-            this.rememberMeCBox.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.loginFormPanel;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.userPanel;
+            this.guna2DragControl2.UseTransparentDrag = true;
             // 
             // LoginForm
             // 
@@ -391,6 +401,8 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox usernameBox;
         private Guna.UI2.WinForms.Guna2CheckBox rememberMeCBox;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
     }
 }
 

@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.userPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureWarning = new System.Windows.Forms.PictureBox();
             this.strengthLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
@@ -80,8 +80,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.userPanel.SuspendLayout();
+            this.formPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.mainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureWarning)).BeginInit();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
@@ -97,47 +99,47 @@
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            this.loginFormPanel.SuspendLayout();
+            this.formPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // userPanel
+            // mainPanel
             // 
-            this.userPanel.BackColor = System.Drawing.Color.Transparent;
-            this.userPanel.BorderColor = System.Drawing.Color.Black;
-            this.userPanel.BorderRadius = 10;
-            this.userPanel.Controls.Add(this.pictureWarning);
-            this.userPanel.Controls.Add(this.strengthLabel);
-            this.userPanel.Controls.Add(this.guna2Panel8);
-            this.userPanel.Controls.Add(this.guna2Panel9);
-            this.userPanel.Controls.Add(this.guna2Panel10);
-            this.userPanel.Controls.Add(this.selectPictureBtn);
-            this.userPanel.Controls.Add(this.guna2CustomGradientPanel2);
-            this.userPanel.Controls.Add(this.guna2Panel7);
-            this.userPanel.Controls.Add(this.panel2);
-            this.userPanel.Controls.Add(this.genderPanel);
-            this.userPanel.Controls.Add(this.birthdatePanel);
-            this.userPanel.Controls.Add(this.guna2Panel4);
-            this.userPanel.Controls.Add(this.guna2HtmlLabel5);
-            this.userPanel.Controls.Add(this.extensionNameCBox);
-            this.userPanel.Controls.Add(this.guna2Panel3);
-            this.userPanel.Controls.Add(this.guna2Panel2);
-            this.userPanel.Controls.Add(this.guna2Panel1);
-            this.userPanel.Controls.Add(this.submitBtn);
-            this.userPanel.Controls.Add(this.guna2HtmlLabel1);
-            this.userPanel.Controls.Add(this.panel1);
-            this.userPanel.Controls.Add(this.guna2ControlBox2);
-            this.userPanel.Controls.Add(this.guna2ControlBox1);
-            this.userPanel.FillColor = System.Drawing.Color.White;
-            this.userPanel.Location = new System.Drawing.Point(8, 7);
-            this.userPanel.Name = "userPanel";
-            this.userPanel.Size = new System.Drawing.Size(839, 536);
-            this.userPanel.TabIndex = 0;
-            this.userPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseDown);
-            this.userPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseMove);
+            this.mainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainPanel.BorderColor = System.Drawing.Color.Black;
+            this.mainPanel.BorderRadius = 10;
+            this.mainPanel.Controls.Add(this.pictureWarning);
+            this.mainPanel.Controls.Add(this.strengthLabel);
+            this.mainPanel.Controls.Add(this.guna2Panel8);
+            this.mainPanel.Controls.Add(this.guna2Panel9);
+            this.mainPanel.Controls.Add(this.guna2Panel10);
+            this.mainPanel.Controls.Add(this.selectPictureBtn);
+            this.mainPanel.Controls.Add(this.guna2CustomGradientPanel2);
+            this.mainPanel.Controls.Add(this.guna2Panel7);
+            this.mainPanel.Controls.Add(this.panel2);
+            this.mainPanel.Controls.Add(this.genderPanel);
+            this.mainPanel.Controls.Add(this.birthdatePanel);
+            this.mainPanel.Controls.Add(this.guna2Panel4);
+            this.mainPanel.Controls.Add(this.guna2HtmlLabel5);
+            this.mainPanel.Controls.Add(this.extensionNameCBox);
+            this.mainPanel.Controls.Add(this.guna2Panel3);
+            this.mainPanel.Controls.Add(this.guna2Panel2);
+            this.mainPanel.Controls.Add(this.guna2Panel1);
+            this.mainPanel.Controls.Add(this.submitBtn);
+            this.mainPanel.Controls.Add(this.guna2HtmlLabel1);
+            this.mainPanel.Controls.Add(this.panel1);
+            this.mainPanel.Controls.Add(this.guna2ControlBox2);
+            this.mainPanel.Controls.Add(this.guna2ControlBox1);
+            this.mainPanel.FillColor = System.Drawing.Color.White;
+            this.mainPanel.Location = new System.Drawing.Point(8, 7);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(839, 536);
+            this.mainPanel.TabIndex = 0;
+            //this.mainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseDown);
+            //this.mainPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseMove);
             // 
             // pictureWarning
             // 
@@ -1023,27 +1025,39 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(38, 25);
             this.guna2ControlBox1.TabIndex = 14;
             // 
-            // loginFormPanel
+            // formPanel
             // 
-            this.loginFormPanel.Controls.Add(this.userPanel);
-            this.loginFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loginFormPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            this.loginFormPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            this.loginFormPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
-            this.loginFormPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.loginFormPanel.Location = new System.Drawing.Point(0, 0);
-            this.loginFormPanel.Name = "loginFormPanel";
-            this.loginFormPanel.Size = new System.Drawing.Size(855, 551);
-            this.loginFormPanel.TabIndex = 0;
-            this.loginFormPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseDown);
-            this.loginFormPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseMove);
+            this.formPanel.Controls.Add(this.mainPanel);
+            this.formPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.formPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            this.formPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
+            this.formPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
+            this.formPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.formPanel.Location = new System.Drawing.Point(0, 0);
+            this.formPanel.Name = "formPanel";
+            this.formPanel.Size = new System.Drawing.Size(855, 551);
+            this.formPanel.TabIndex = 0;
+            //this.formPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseDown);
+            //this.formPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseMove);
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.formPanel;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.mainPanel;
+            this.guna2DragControl2.UseTransparentDrag = true;
             // 
             // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 551);
-            this.Controls.Add(this.loginFormPanel);
+            this.Controls.Add(this.formPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(855, 551);
@@ -1051,8 +1065,8 @@
             this.Name = "SignInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diary Planner Pro";
-            this.userPanel.ResumeLayout(false);
-            this.userPanel.PerformLayout();
+            this.mainPanel.ResumeLayout(false);
+            this.mainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureWarning)).EndInit();
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
@@ -1078,15 +1092,15 @@
             this.guna2Panel2.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.loginFormPanel.ResumeLayout(false);
+            this.formPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel loginFormPanel;
-        private Guna.UI2.WinForms.Guna2Panel userPanel;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel formPanel;
+        private Guna.UI2.WinForms.Guna2Panel mainPanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2ComboBox extensionNameCBox;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
@@ -1135,5 +1149,7 @@
         private System.Windows.Forms.PictureBox genderWarning;
         private System.Windows.Forms.PictureBox pictureWarning;
         private System.Windows.Forms.PictureBox birthdateWarning;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
     }
 }
