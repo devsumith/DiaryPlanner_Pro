@@ -41,6 +41,14 @@ namespace DiaryPlanner_Pro
 
             // When the login form loads, center the 'userLabel' horizontally within the 'userPanel'.
             userLabel.Location = new Point((userPanel.Width - userLabel.Width) / 2, userLabel.Location.Y);
+
+            // Check if the "Remember Me" feature is enabled in application settings.
+            if (Properties.Settings.Default.ifRememberMe)
+            {
+                // If enabled, populate the usernameBox with the stored username and set the checkbox as checked.
+                usernameBox.Text = Properties.Settings.Default.Username;
+                rememberMeCBox.Checked = true;
+            }
         }
 
         #region FUNCTION FOR LOGIN VALIDATION
@@ -136,6 +144,9 @@ namespace DiaryPlanner_Pro
                     // Store the user's retrieved information from the database to the UserPersonalData class.
                     StoreInformation();
 
+                    // Check the checkec state of rememberMeCBox
+                    RememberMeCheckedState();
+
                     // Redirect to the main form after the sucessfull logged-in.
                     this.Hide();
                     var MainForm = new MainForm(userData);
@@ -173,6 +184,9 @@ namespace DiaryPlanner_Pro
 
         #region FUNCTION TO CHECK THE CHECKED STATE OF "REMEMBER ME"
 
+        // This method handles the state of the "Remember Me" feature in the application settings.
+        // If checked, enable the "Remember Me" feature by setting 'ifRememberMe' to 'true'; otherwise, false.
+        // Also, store the entered username in the 'Username' setting; otherwise, null.
         private void RememberMeCheckedState()
         {
             if (rememberMeCBox.Checked)
