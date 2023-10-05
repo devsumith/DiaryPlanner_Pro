@@ -175,7 +175,18 @@ namespace DiaryPlanner_Pro
 
         private void RememberMeCheckedState()
         {
+            if (rememberMeCBox.Checked)
+            {
+                Properties.Settings.Default.ifRememberMe = true;
+                Properties.Settings.Default.Username = usernameBox.Text;
+            }
+            else
+            {
+                Properties.Settings.Default.ifRememberMe = false;
+                Properties.Settings.Default.Username = null;
+            }
 
+            Properties.Settings.Default.Save();
         }
 
         #endregion
