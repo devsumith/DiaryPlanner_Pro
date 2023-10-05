@@ -332,6 +332,7 @@
             // 
             // rememberMeCBox
             // 
+            this.rememberMeCBox.Animated = true;
             this.rememberMeCBox.AutoSize = true;
             this.rememberMeCBox.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.rememberMeCBox.CheckedState.BorderRadius = 3;
