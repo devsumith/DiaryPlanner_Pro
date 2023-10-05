@@ -205,6 +205,16 @@ namespace DiaryPlanner_Pro
 
         #endregion
 
+        #region FUNCTION FOR KEY PRESS TO LOGIN
+
+        private void login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                loginBtn_Click(sender, e);
+        }
+
+        #endregion
+
         #region FUNCTION FOR PASSWORD VISIBILITY TOGGLE
 
         private void passwordBox_IconRightClick(object sender, EventArgs e)

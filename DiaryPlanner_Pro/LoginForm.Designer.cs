@@ -247,6 +247,7 @@
             this.passwordBox.TextOffset = new System.Drawing.Point(10, 0);
             this.passwordBox.UseSystemPasswordChar = true;
             this.passwordBox.IconRightClick += new System.EventHandler(this.passwordBox_IconRightClick);
+            this.passwordBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.login_KeyDown);
             // 
             // usernameBox
             // 
@@ -277,6 +278,7 @@
             this.usernameBox.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.usernameBox.TabIndex = 3;
             this.usernameBox.TextOffset = new System.Drawing.Point(10, 0);
+            this.usernameBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.login_KeyDown);
             // 
             // guna2ControlBox2
             // 
@@ -372,6 +374,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diary Planner Pro";
             this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.login_KeyDown);
             this.loginFormPanel.ResumeLayout(false);
             this.loginFormPanel.PerformLayout();
             this.userPanel.ResumeLayout(false);
