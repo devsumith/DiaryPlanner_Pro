@@ -47,6 +47,8 @@ namespace DiaryPlanner_Pro
 
         #endregion
 
+        #region BASIC FEATURES FUNCTIONALITY
+
         #region FUNCTION TO UPDATE THE TIME AND DATE LABEL EVERY 100 MILLISECONDS 
 
         private void timerTick_Tick(object sender, EventArgs e)
@@ -54,6 +56,25 @@ namespace DiaryPlanner_Pro
             timeLabel.Text = DateTime.Now.ToShortTimeString();
             dateLabel.Text = DateTime.Now.ToShortDateString();
         }
+
+        #endregion
+
+        #region FUNCTION TO LOGOUT THE USER'S ACCOUNT
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            // If all textboxes are filled, start the loading screen.
+            var flashingScreenForm = new FlashingScreenForm();
+            flashingScreenForm.ShowDialog();
+
+            // Redirect to the login form after the sucessfull logged-out.
+            this.Hide();
+            var LoginForm = new LoginForm();
+            LoginForm.FormClosed += (s, args) => this.Close();
+            LoginForm.Show();
+        }
+
+        #endregion
 
         #endregion
     }

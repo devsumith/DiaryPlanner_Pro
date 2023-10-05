@@ -222,31 +222,31 @@
   <data name="&gt;&gt;timeLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="selectPictureBtn.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="logoutBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Bahnschrift Condensed, 14.25pt</value>
   </data>
-  <data name="selectPictureBtn.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="logoutBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 31</value>
   </data>
-  <data name="selectPictureBtn.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="logoutBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 35</value>
   </data>
-  <data name="selectPictureBtn.TabIndex" type="System.Int32, mscorlib">
+  <data name="logoutBtn.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="selectPictureBtn.Text" xml:space="preserve">
+  <data name="logoutBtn.Text" xml:space="preserve">
     <value>Logout</value>
   </data>
-  <data name="&gt;&gt;selectPictureBtn.Name" xml:space="preserve">
-    <value>selectPictureBtn</value>
+  <data name="&gt;&gt;logoutBtn.Name" xml:space="preserve">
+    <value>logoutBtn</value>
   </data>
-  <data name="&gt;&gt;selectPictureBtn.Type" xml:space="preserve">
+  <data name="&gt;&gt;logoutBtn.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2GradientButton, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;selectPictureBtn.Parent" xml:space="preserve">
+  <data name="&gt;&gt;logoutBtn.Parent" xml:space="preserve">
     <value>guna2Panel2</value>
   </data>
-  <data name="&gt;&gt;selectPictureBtn.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;logoutBtn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="guna2Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
