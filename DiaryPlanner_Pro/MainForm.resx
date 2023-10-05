@@ -131,7 +131,7 @@
     <value>1280, 720</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="userPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="mainPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
@@ -160,7 +160,7 @@
     <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="&gt;&gt;guna2HtmlLabel2.Parent" xml:space="preserve">
-    <value>userPanel</value>
+    <value>mainPanel</value>
   </data>
   <data name="&gt;&gt;guna2HtmlLabel2.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -485,7 +485,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADY
-        EAAAAk1TRnQBSQFMAgEBBAEAATgBAAE4AQABGQEAARkBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        EAAAAk1TRnQBSQFMAgEBBAEAAUgBAAFIAQABGQEAARkBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABZAMAATIDAAEBAQABCAUAAYgBExgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
@@ -719,7 +719,7 @@
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="&gt;&gt;sidePanel.Parent" xml:space="preserve">
-    <value>userPanel</value>
+    <value>mainPanel</value>
   </data>
   <data name="&gt;&gt;sidePanel.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -743,7 +743,7 @@
     <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox3.Parent" xml:space="preserve">
-    <value>userPanel</value>
+    <value>mainPanel</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox3.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -767,7 +767,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>userPanel</value>
+    <value>mainPanel</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -791,7 +791,7 @@
     <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox2.Parent" xml:space="preserve">
-    <value>userPanel</value>
+    <value>mainPanel</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox2.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -815,54 +815,54 @@
     <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox1.Parent" xml:space="preserve">
-    <value>userPanel</value>
+    <value>mainPanel</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="userPanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 7</value>
   </data>
-  <data name="userPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>1264, 705</value>
   </data>
-  <data name="userPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;userPanel.Name" xml:space="preserve">
-    <value>userPanel</value>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
   </data>
-  <data name="&gt;&gt;userPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;userPanel.Parent" xml:space="preserve">
-    <value>loginFormPanel</value>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>formPanel</value>
   </data>
-  <data name="&gt;&gt;userPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="loginFormPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="formPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="loginFormPanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="formPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="loginFormPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="formPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>1280, 720</value>
   </data>
-  <data name="loginFormPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="formPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;loginFormPanel.Name" xml:space="preserve">
-    <value>loginFormPanel</value>
+  <data name="&gt;&gt;formPanel.Name" xml:space="preserve">
+    <value>formPanel</value>
   </data>
-  <data name="&gt;&gt;loginFormPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;formPanel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CustomGradientPanel, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;loginFormPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;formPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;loginFormPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;formPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1036,6 +1036,18 @@
   <data name="&gt;&gt;timerTick.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;guna2DragControl1.Name" xml:space="preserve">
+    <value>guna2DragControl1</value>
+  </data>
+  <data name="&gt;&gt;guna2DragControl1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DragControl, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2DragControl2.Name" xml:space="preserve">
+    <value>guna2DragControl2</value>
+  </data>
+  <data name="&gt;&gt;guna2DragControl2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DragControl, Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
   </data>
@@ -1044,5 +1056,11 @@
   </data>
   <metadata name="timerTick.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>248, 21</value>
+  </metadata>
+  <metadata name="guna2DragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>349, 21</value>
+  </metadata>
+  <metadata name="guna2DragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>509, 21</value>
   </metadata>
 </root>

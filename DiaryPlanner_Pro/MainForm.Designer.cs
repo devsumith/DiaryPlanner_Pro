@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.userPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.sidePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -57,38 +57,38 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.loginFormPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.formPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.timerTick = new System.Windows.Forms.Timer(this.components);
-            this.userPanel.SuspendLayout();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.mainPanel.SuspendLayout();
             this.sidePanel.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.headTabPanel.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userImage)).BeginInit();
-            this.loginFormPanel.SuspendLayout();
+            this.formPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // userPanel
+            // mainPanel
             // 
-            resources.ApplyResources(this.userPanel, "userPanel");
-            this.userPanel.BackColor = System.Drawing.Color.Transparent;
-            this.userPanel.BorderColor = System.Drawing.Color.Black;
-            this.userPanel.BorderRadius = 10;
-            this.userPanel.Controls.Add(this.guna2HtmlLabel2);
-            this.userPanel.Controls.Add(this.sidePanel);
-            this.userPanel.Controls.Add(this.guna2ControlBox3);
-            this.userPanel.Controls.Add(this.panel1);
-            this.userPanel.Controls.Add(this.guna2ControlBox2);
-            this.userPanel.Controls.Add(this.guna2ControlBox1);
-            this.userPanel.FillColor = System.Drawing.Color.White;
-            this.userPanel.Name = "userPanel";
-            this.userPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.formPanel_MouseDown);
-            this.userPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.formPanel_MouseMove);
+            resources.ApplyResources(this.mainPanel, "mainPanel");
+            this.mainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainPanel.BorderColor = System.Drawing.Color.Black;
+            this.mainPanel.BorderRadius = 10;
+            this.mainPanel.Controls.Add(this.guna2HtmlLabel2);
+            this.mainPanel.Controls.Add(this.sidePanel);
+            this.mainPanel.Controls.Add(this.guna2ControlBox3);
+            this.mainPanel.Controls.Add(this.panel1);
+            this.mainPanel.Controls.Add(this.guna2ControlBox2);
+            this.mainPanel.Controls.Add(this.guna2ControlBox1);
+            this.mainPanel.FillColor = System.Drawing.Color.White;
+            this.mainPanel.Name = "mainPanel";
             // 
             // guna2HtmlLabel2
             // 
@@ -315,33 +315,43 @@
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             // 
-            // loginFormPanel
+            // formPanel
             // 
-            this.loginFormPanel.Controls.Add(this.userPanel);
-            resources.ApplyResources(this.loginFormPanel, "loginFormPanel");
-            this.loginFormPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            this.loginFormPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            this.loginFormPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
-            this.loginFormPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.loginFormPanel.Name = "loginFormPanel";
-            this.loginFormPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.formPanel_MouseDown);
-            this.loginFormPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.formPanel_MouseMove);
+            this.formPanel.Controls.Add(this.mainPanel);
+            resources.ApplyResources(this.formPanel, "formPanel");
+            this.formPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            this.formPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
+            this.formPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(0)))), ((int)(((byte)(37)))));
+            this.formPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.formPanel.Name = "formPanel";
             // 
             // timerTick
             // 
             this.timerTick.Enabled = true;
             this.timerTick.Tick += new System.EventHandler(this.timerTick_Tick);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.formPanel;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.mainPanel;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.loginFormPanel);
+            this.Controls.Add(this.formPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.userPanel.ResumeLayout(false);
-            this.userPanel.PerformLayout();
+            this.mainPanel.ResumeLayout(false);
+            this.mainPanel.PerformLayout();
             this.sidePanel.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
@@ -350,15 +360,15 @@
             this.headTabPanel.PerformLayout();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.userImage)).EndInit();
-            this.loginFormPanel.ResumeLayout(false);
+            this.formPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel loginFormPanel;
-        private Guna.UI2.WinForms.Guna2Panel userPanel;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel formPanel;
+        private Guna.UI2.WinForms.Guna2Panel mainPanel;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Panel panel1;
@@ -385,5 +395,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel dateLabel;
         private System.Windows.Forms.Timer timerTick;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
     }
 }
