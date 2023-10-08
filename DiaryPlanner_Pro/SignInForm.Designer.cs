@@ -138,8 +138,6 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(839, 536);
             this.mainPanel.TabIndex = 0;
-            //this.mainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseDown);
-            //this.mainPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseMove);
             // 
             // pictureWarning
             // 
@@ -539,7 +537,7 @@
             this.yearBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.yearBox.FocusedColor = System.Drawing.Color.Silver;
             this.yearBox.FocusedState.BorderColor = System.Drawing.Color.Silver;
-            this.yearBox.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yearBox.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
             this.yearBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(101)))), ((int)(((byte)(190)))));
             this.yearBox.HoverState.BorderColor = System.Drawing.Color.DimGray;
             this.yearBox.IntegralHeight = false;
@@ -1037,8 +1035,6 @@
             this.formPanel.Name = "formPanel";
             this.formPanel.Size = new System.Drawing.Size(855, 551);
             this.formPanel.TabIndex = 0;
-            //this.formPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseDown);
-            //this.formPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dragControls_MouseMove);
             // 
             // guna2DragControl1
             // 

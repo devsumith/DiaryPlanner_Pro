@@ -56,10 +56,10 @@ namespace DiaryPlanner_Pro
                 // Create a new instance of the 'LoginForm' if registered, otherwise 'SignInForm'.
                 var form = Properties.Settings.Default.IfRegistered ? (Form)new LoginForm() : new SignInForm();
 
-                // Attach an event handler to the 'FormClosed' event of the 'SignInForm'.
+                // Attach an event handler to the 'FormClosed' event of the assigned form.
                 form.FormClosed += (s, args) => this.Close();
 
-                // Show the 'SignInForm'.
+                // Show the assigned form.
                 form.Show();
             });
         }
